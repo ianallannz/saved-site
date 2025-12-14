@@ -1,0 +1,30 @@
+<body style="margin:0;">
+<div id="pdf-viewer" style="height: 100vh;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script>
+  document.addEventListener("adobe_dc_view_sdk.ready", function () {
+    var adobeDCView = new AdobeDC.View({
+      clientId: "c710587e16b74ac1a7866a52f8381ad8",
+      divId: "pdf-viewer"
+    });
+    adobeDCView.previewFile({
+      content: {
+        location: {
+          url: "https://saved.co.nz/docs/saved-venture-proposal.pdf"
+        }
+      },
+      metaData: {
+        fileName: "saved-venture-proposal.pdf"
+      }
+    }, {
+      embedMode: "FULL_WINDOW",
+      showDownloadPDF: false,
+      showPrintPDF: false,
+      defaultViewMode: "FIT_WIDTH",
+      showZoomControl: true,
+      showAnnotationTools: false,
+      showPageControls: true
+    });
+  });
+</script>
+</body>
