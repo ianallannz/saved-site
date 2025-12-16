@@ -522,6 +522,13 @@ body .prop {
     min-width: auto;
 }
 
+/* Safari hack to hide the ugly outline */
+@supports (-webkit-touch-callout: none) {
+  h2:focus, h3:focus, h4:focus {
+    outline: none;
+  }
+}
+
 @media (max-width: 768px) {
 
     .prop-nav {
