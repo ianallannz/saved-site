@@ -10,6 +10,15 @@ const images = [
 
 let index = 0;
 
+// Preload images
+const preloaded = [];
+images.forEach(src => {
+  const img = new Image();
+  img.src = src;
+  preloaded.push(img);
+});
+
+
 function runCycle() {
   // set next background
   bgEl.style.backgroundImage = `url(${images[index]})`;
