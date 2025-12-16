@@ -589,6 +589,13 @@ body .prop {
         font-size: 0.7rem;
         line-height: 1rem;
     }
+
+   .prop #risks-section table td:first-child,
+    .prop #risks-section table th:first-child {
+        width: auto;
+        min-width: auto;
+    }
+
 }
 
 
