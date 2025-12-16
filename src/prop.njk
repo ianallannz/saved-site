@@ -1,0 +1,64 @@
+---
+layout: base.njk
+title: "Saved: IT can be saved, and WE can be saved."
+excerpt: "Saved is a new venture in Phase 1 of an amitious vision. Phase 1: collect, process, upgrade, reimagine, and redistribute Windows 10 laptops, with warranties."
+---
+
+<button class="hamburger" aria-controls="prop-nav" aria-expanded="false">
+  ☰
+</button>
+
+<nav id="prop-nav" class="prop-nav">
+  <ul>
+    {% mdheadings "prop-parts/cover.md" %}
+    {% mdheadings "prop-parts/vision.md" %}
+    {% mdheadings "prop-parts/problem.md" %}
+    {% mdheadings "prop-parts/opportunity.md" %}
+    {% mdheadings "prop-parts/solution-phase1.md" %}
+    {% mdheadings "prop-parts/solution-phase23.md" %}
+    {% mdheadings "prop-parts/operating-model.md" %}
+    {% mdheadings "prop-parts/progress-roadmap.md" %}
+    {% mdheadings "prop-parts/go-to-market.md" %}
+  </ul>
+</nav>
+<main class="proposal">
+    <section id="cover-section" class="prop-content">
+        {% mdfile "prop-parts/cover.md" %}    
+    </section>
+    <section id="vision-section" class="prop-content">
+        {% mdfile "prop-parts/vision.md" %}    
+    </section>
+    <section id="problem-section" class="prop-content">
+        {% mdfile "prop-parts/problem.md" %}    
+    </section>
+    <section id="opportunity-section" class="prop-content">
+        {% mdfile "prop-parts/opportunity.md" %}    
+    </section>
+    <section id="solution-phase1-section" class="prop-content">
+        {% mdfile "prop-parts/solution-phase1.md" %}    
+    </section>
+    <section id="solution-phase23-section" class="prop-content">
+        {% mdfile "prop-parts/solution-phase23.md" %}    
+    </section>
+    <section id="operating-model-section" class="prop-content">
+        {% mdfile "prop-parts/operating-model.md" %}    
+    </section>
+    <section id="progress-roadmap-section" class="prop-content">
+        {% mdfile "prop-parts/progress-roadmap.md" %}    
+    </section>
+    <section id="go-to-market-section" class="prop-content">
+        {% mdfile "prop-parts/go-to-market.md" %}    
+    </section>
+    <section id="ecosystem-section" class="prop-content">
+        {% mdfile "prop-parts/ecosystem.md" %}    
+    </section>
+    <section id="people-section" class="prop-content">
+        {% mdfile "prop-parts/people.md" %}    
+    </section>
+    <section id="risks-section" class="prop-content">
+        {% mdfile "prop-parts/risks.md" %}    
+    </section>
+    <section id="next-steps-section" class="prop-content">
+        {% mdfile "prop-parts/next-steps.md" %}    
+    </section>
+</main>

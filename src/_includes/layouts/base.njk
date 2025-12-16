@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-256x256.png">
+    <link rel="stylesheet" href="/css/commit-mono/index.css">
     <link rel="stylesheet" href="/css/custom.css">
     <meta name="theme-color" content="#F4F4F4">
     <!-- SEO basics -->
@@ -31,7 +32,11 @@
 <body class="{{ page.fileSlug }}">
     {{ content | safe }}
 
-    <script src="/js/custom.js" defer></script>
+    {% if page.fileSlug == "prop" %}
+        <script src="/js/prop.js" defer></script>
+    {% else %}
+        <script src="/js/custom.js" defer></script>
+    {% endif %}
 </body>
 
 </html>

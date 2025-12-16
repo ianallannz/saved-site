@@ -22,7 +22,6 @@ body {
 h1, h2, h3, h4, h5, h6, a {
     font-family: 'Space Mono', monospace;
     margin-bottom: 1rem;
-    color: #222222;
 }
 
 #hero {
@@ -226,3 +225,365 @@ h1, h2, h3, h4, h5, h6, a {
     font-weight: bold;
     text-decoration: none;
 }
+
+/* =========================== */
+/* Proposal CSS */
+/* =========================== */
+
+body .prop {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+}
+
+.prop .prop-nav {
+  position: fixed;            /* stays put when scrolling */
+  top: 0;
+  left: 0;
+  height: 100vh;              /* full viewport height */
+  width: 270px;               /* adjust as needed */
+  overflow-y: auto;           /* scroll if nav is taller than viewport */
+  background: #f8f8f8;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.prop .prop-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.prop .prop-nav li {
+  margin-bottom: 0.2rem;
+}
+
+.prop .prop-nav li.h2 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-top: 0.8rem;
+}
+
+.prop .prop-nav li.h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.prop .prop-nav li.h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.prop .prop-nav li a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+.prop .prop-nav li a:hover {
+    text-decoration: underline;
+}
+
+.prop-nav ul li a.active::before {
+  content: "➔ ";
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+.proposal {
+    flex: 1;                    /* take remaining space */
+    margin-left: 290px;    
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.prop-content {
+    width: 100%;              
+    max-width: 700px;         
+    margin: 0 auto;
+    padding-top: 1rem;    
+    margin-bottom: 4rem;
+}
+
+.prop h2 {
+    display: inline-block;
+    background-color: #1100FF;
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    margin-bottom: 1.4rem;
+    letter-spacing: -0.1rem;
+}
+
+.prop h4 {
+    display: block;
+    color: #1100FF;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.05rem;
+}
+
+
+.prop h3 {
+    display: block;
+    color: #1100FF;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.05rem;
+}
+
+.prop .direct-link {
+    display: none;
+}
+
+.prop p {
+    margin-bottom: 1rem;    
+}
+
+.prop ul, ol {
+    padding-left: 2rem;
+    margin-bottom: 1rem;    
+}
+
+.prop ol li ol {
+    padding-left: 3rem;
+}
+
+.prop li {
+    margin-bottom: 0.5rem;
+}
+
+.prop img {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100vw;    
+    max-width: 1000px; 
+    margin-left: 50%; 
+    transform: translateX(-50%);     
+}
+
+.prop img + em, .prop div + p em {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.prop .logo-side-by-side {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.prop #cover-section {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.prop #cover-section img {
+    height: 120px;
+    width: auto;
+    display: inline-block;
+    margin-left: 0;
+    transform: none;
+}
+
+.prop #cover-section pre {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-bottom: 5rem;
+}
+
+.prop #cover-section p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.prop #cover-section h2 {
+    margin-top: 4rem;
+}
+
+.prop #cover-section h3 {
+    margin-bottom: 2rem;
+}
+
+.prop #cover-section h4 {
+    margin-top: 5rem;
+}
+
+.prop .logo-side-by-side img {
+    margin-left: 0;
+    transform: none;
+    height: 80px;
+    width: auto;
+}
+
+.prop .two-column-gallery {
+    position: relative;
+    width: 100vw;    
+    max-width: 1000px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 1rem;                      
+    margin-left: 50%; 
+    transform: translateX(-50%);
+    align-self: center;     
+}
+
+.prop .two-column-gallery figure {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2rem
+}
+
+.prop .two-column-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transform: none;
+}
+
+.prop .two-column-gallery figcaption {
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+
+.prop table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+.prop #cover-section table {
+    margin-bottom: 4rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+
+.prop table th, .prop table td {
+    border-bottom: 1px solid #DDDDDD;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 0.5rem;
+    vertical-align: top;
+}
+
+.prop #cover-section table th, .prop #cover-section table td {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.prop table td:first-child,
+.prop table th:first-child {
+    width: 25%;
+    min-width: 120px;
+    font-weight: 700;
+}
+
+.prop #cover-section table td:first-child,
+.prop #cover-section table th:first-child {
+    width: auto;
+    min-width: auto;
+}
+
+@media (max-width: 768px) {
+
+    .prop-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 4rem !important;
+        width: 100vw !important;   /* force full viewport width */
+        max-width: 100vw;          /* override any desktop max-width */
+        height: 100vh;
+        background: #fff;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+    
+    .prop-nav.open {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1100;
+        background: #fff;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.2rem;
+        border-left: none;
+        border-top: none;
+        border-right: 1px solid #e9e9e9;
+        border-bottom: 1px solid #e9e9e9;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .prop {
+        max-width: 100%;        
+        padding: 1rem;
+    }
+
+    .proposal {
+        margin-left: 0;          
+    }
+
+    .prop .logo-side-by-side img {
+        height: 60px;
+    }
+
+    .prop .two-column-gallery {
+        grid-template-columns: 1fr; 
+    }
+
+    .prop #risks-section table {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+}
+
+
+
+
