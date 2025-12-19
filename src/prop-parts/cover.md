@@ -5,8 +5,8 @@
 ### Exectutive overview
 
 ```
-Version 1.2
-17 December 2025
+Version 1.2.1
+18 December 2025
 ```
 
 
@@ -28,6 +28,7 @@ East Coast, New Zealand
 | 1.1 | 11/12/2025 | Clarification of phased approach |
 | 1.1.1 | 16/12/2025 | Ecosystem adjustments |
 | 1.2 | 17/12/2025 | Rebuilt prop using 11ty.dev |
+| 1.2.1 | 18/12/2025 | Channel partner edits |
 
 
 Saved: a venture proposal  © 2025 by Ian Allan is licensed under **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).**

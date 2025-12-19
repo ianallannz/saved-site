@@ -26,7 +26,7 @@ The regional ecosystem covering environmental management, technology, education,
 | TaiTech | <ul><li>Saved is a future complementary partner and provider of laptops and workshops with a focus on cost-effective and resilient computing</li></ul> | 
 | Digital Futures Aotearoa, Remojo Tech | <ul><li>Saved is a future local collaborator</li></ul> | 
 | EIT | <ul><li>Future potential delivery partner for qualifications in sovereign and resilient technologies</li><li>Saved is a future regular intern sponsor</li></ul> |
-| Te Wānanga o Aotearoa, Tūranga Ararau et al | <ul><li>Saved is a future complementary partner and provider of laptops and workshops with a focus on cost-effective and resilient computing</li></ul> |
+| Te Wānanga o Aotearoa, Tūranga Ararau, and PTEs | <ul><li>Saved is a future complementary partner and provider of laptops and workshops with a focus on cost-effective and resilient computing</li></ul> |
 | Local high schools | <ul><li>Saved could become a laptop provider to high schools, though this is not anticipated</li><li>Saved is a future provider of workshops at secondary level with a focus on sovereign and resilient technologies</li></ul> |
 
 ### Social services

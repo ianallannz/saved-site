@@ -56,7 +56,7 @@ The laptops will be physically skinned to represent their renewed state.
 
 #### Channels and partners
 
-Preferably, the Saved laptops will be redistributed to the population through channels and partners such as: WINZ; The Environment Centre (TEC); TaiTech; and other iwi and charitable organisations.
+The Saved laptops will be redistributed to the population through channels and partners such as: Work & Income, Private Training Establishments (PTEs), and other education and social services.
 
 #### For a price
 
