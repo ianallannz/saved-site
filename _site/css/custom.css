@@ -502,6 +502,30 @@ header nav a:hover {
     border: none;
 }
 
+#thanks {
+    position: relative;
+    /* min-height: 100svh; */
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    background-color: #FFFFFF;
+    margin-top: -80px;
+    padding: 12rem 2rem 12rem 5rem;
+    border: 1px dashed rgba(17,0,255,0.1);
+    border-radius: 0 80px 0 0;
+}
+
+#thanks .thanks-wrap {
+    max-width: 700px;
+    margin: 0 auto;      
+    padding: 2rem;       
+    text-align: left;    
+}
+
+
 .logo-container {
     margin-top: 1rem;
     display: flex;
@@ -1203,6 +1227,15 @@ body .prop {
         margin-right: 1rem;
         flex-direction: column; 
         padding: 2rem 1rem 10rem 1rem;
+        border-radius: 0 80px 0 0;
+    }
+
+    #thanks {
+        width: calc(100% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-direction: column; 
+        padding: 10rem 1rem 10rem 1rem;
         border-radius: 0 80px 0 0;
     }
 
