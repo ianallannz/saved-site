@@ -898,6 +898,101 @@ body .prop {
   }
 }
 
+
+@media (max-width: 1200px) {
+
+    #saved-hero .saved-vision {
+        flex: 8;
+    }
+
+    #saved-hero .saved-laptop {
+        flex: 16;
+    }
+    
+    #saved-hero .saved-vision h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+        outline-offset: 5px;
+    }
+
+    #saved-hero .saved-vision h2 {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        outline-offset: 5px;
+    }
+
+    #saved-hero .saved-vision p a {
+        padding: 0.6rem 1.8rem 0.6rem 1.6rem;
+        outline-offset: 5px;
+    }
+
+    #linkroll .featured-link {
+        flex: 7;
+    }
+
+    #linkroll .link-roll {
+        flex: 5;
+    }
+
+    #linkroll .featured-link h3 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    #linkroll .featured-link p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin-top: 1rem;
+        color: #000;
+    }
+
+    #linkroll .featured-link p.subtitle {
+        font-size:1.6rem;
+        line-height: 2.1rem;
+        margin-top: 1.5rem;
+    }
+
+    #linkroll .featured-link p.signoff {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-family: "Commit Mono", monospace;
+        outline: 1px dashed rgba(17,0,255,0.1);
+        display: inline-block;
+        outline-offset: 10px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    #saved-hero .saved-vision h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        margin-bottom: 1rem;
+        outline-offset: 5px;
+    }
+
+    #saved-hero .saved-vision h2 {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        outline-offset: 5px;
+    }
+
+    #saved-hero .saved-vision p a {
+        padding: 0.6rem 1.8rem 0.6rem 1.6rem;
+        outline-offset: 5px;
+    }
+
+    #linkroll .featured-link h3 {
+        font-size: 2.6rem;
+        line-height: 3.3rem;
+    }
+
+}
+
+
 @media (max-width: 768px) {
 
     .prop header {
