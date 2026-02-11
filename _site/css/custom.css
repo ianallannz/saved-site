@@ -500,6 +500,7 @@ header nav a:hover {
     font-style: italic;
     font-size: 1.3rem;
     border: none;
+    cursor: pointer;
 }
 
 #thanks {
@@ -1203,7 +1204,7 @@ body .prop {
 
     #theproposal .theproposal-wrapper .blurb p a {
         margin-top: 1rem;
-        padding: 0.6rem 1.8rem 0.6rem 1.6rem;
+        padding: 0.6rem 1.2rem 0.6rem 1rem;
         outline-offset: 5px;
         border-radius: 0 0 20px 0;
         font-size: 1.3rem;
@@ -1267,7 +1268,7 @@ body .prop {
 
     .form-container button {
         margin-top: 1rem;
-        padding: 0.6rem 1.8rem 0.6rem 1.6rem;
+        padding: 0.6rem 1.2rem 0.6rem 1rem;
         outline-offset: 5px;
         font-size: 1.3rem;
     }
