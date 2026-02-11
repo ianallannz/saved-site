@@ -65,15 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const b = document.getElementById("screen-b");
 
     const images = [
-        "/images/bluefin-windows-10-disaster.png",
-        "/images/bluefin-windows-10-disaster-workspace.png",
-        "/images/bluefin-favourite-web-apps.png",
-        "/images/bluefin-workspace-power.png",
-        "/images/bluefin-ms-office.png",
-        "/images/bluefin-easy-access.png",
-        "/images/bluefin-familiar-menu.png",
-        "/images/bluefin-signed-in.png",
-        "/images/bluefin-sign-in.png"
+        "/images/bluefin-windows-10-disaster.jpg",
+        "/images/bluefin-windows-10-disaster-workspace.jpg",
+        "/images/bluefin-favourite-web-apps.jpg",
+        "/images/bluefin-workspace-power.jpg",
+        "/images/bluefin-ms-office.jpg",
+        "/images/bluefin-easy-access.jpg",
+        "/images/bluefin-familiar-menu.jpg",
+        "/images/bluefin-signed-in.jpg",
+        "/images/bluefin-sign-in.jpg"
     ];
 
     let index = 0;
