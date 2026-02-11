@@ -58,3 +58,45 @@ function runCycle() {
 // initial delay before first run
 setTimeout(runCycle, 1000);
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const a = document.getElementById("screen-a");
+    const b = document.getElementById("screen-b");
+
+    const images = [
+        "/images/bluefin-windows-10-disaster.png",
+        "/images/bluefin-windows-10-disaster-workspace.png",
+        "/images/bluefin-favourite-web-apps.png",
+        "/images/bluefin-workspace-power.png",
+        "/images/bluefin-ms-office.png",
+        "/images/bluefin-easy-access.png",
+        "/images/bluefin-familiar-menu.png",
+        "/images/bluefin-signed-in.png",
+        "/images/bluefin-sign-in.png"
+    ];
+
+    let index = 0;
+    let showingA = true;
+
+    function crossfade() {
+        const nextIndex = (index + 1) % images.length;
+
+        if (showingA) {
+            // prepare B
+            b.setAttribute("href", images[nextIndex]);
+            b.style.opacity = 1;   // fade B in
+            a.style.opacity = 0;   // fade A out
+        } else {
+            // prepare A
+            a.setAttribute("href", images[nextIndex]);
+            a.style.opacity = 1;   // fade A in
+            b.style.opacity = 0;   // fade B out
+        }
+
+        showingA = !showingA;
+        index = nextIndex;
+    }
+
+    setInterval(crossfade, 4000);
+});

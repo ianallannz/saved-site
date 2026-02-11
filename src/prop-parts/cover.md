@@ -2,7 +2,7 @@
 
 ## Saved: A venture proposal
 
-### Exectutive overview
+### Executive overview
 
 ```
 Version 1.2.1
