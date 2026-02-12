@@ -18,9 +18,9 @@ Computers are securely collected from organisations and taken to a storage and p
 
 #### A viable alternative operating system
 
-There is now a viable alternative operating system that gives these saved Windows 10 laptops a secure, stable, fast, enjoyable second life for many more years.
+There are now two viable alternative operating systems that give these saved Windows 10 laptops a secure, stable, fast, enjoyable second life for many more years.
 
-**The upgrade is [Zorin OS](https://zorin.com/os/ "Zorin OS website")**, a distribution of Linux.
+**The upgrades are [Zorin OS](https://zorin.com/os/ "Zorin OS website") and [Bluefin](https://projectbluefin.io/)**, representing a new breed of Linux.
 
 ![Zorin as Windows 10, Windows 11, MacOS, tablet, its own beautiful thing](../images/prop-zorin1.webp)
 
@@ -29,11 +29,19 @@ There is now a viable alternative operating system that gives these saved Window
 
 Open source Linux alternatives have been tried in the past, however they have not stood up to the user expectations and familiarity of Windows. 
 
-**This time it’s different:**
+#### This time it’s different
 
-- Zorin has a slicker, richer user interface than Windows
-- Zorin can be switched to feel like Windows 10, Windows 11, Mac OS, or a sharper blend of them all
-- Zorin runs smoother than Windows on equivalent hardware—it makes a 7 year old laptop feel new again
+**With Zorin and Bluefin**, you:
+- Have a slicker, richer user interface than Windows
+- Can switch your user interface to feel like Windows 10, Windows 11, Mac OS, or a sharper blend of them all
+- Get a smoother running experience than Windows on equivalent hardware—it makes a 7 year old laptop feel new again
+
+**And with Bluefin especially**, you:
+- Get an Operating System that is built more like iOS or Android under the hood—it's called an "immutable" OS—it means it updates like your phone, you can't really break it
+- Then have an OS that's ideal as a fleet solution for open, resilient, cost-conscious organisations
+- Get special, modern features for software development, making it ideal for those drawn to resilient technology solutions
+
+**One more thing**:
 - Most of our daily computing tasks now happen in our web browsers—from communication to office productivity to design—so the claim that “Linux doesn’t have the software I need” no longer holds for most people.
 
 *Note: The intention is not to mimic Windows 10 or even Windows 11 as accurately as possible. Doing so would still feel like playing basketball with a netball—just not quite right.*
@@ -48,7 +56,7 @@ Several default configurations will be established for the laptops to offer diff
 
 The laptops will be physically skinned to represent their renewed state.
 
-**Overall, a Saved laptop will be better than before.** From the bubbly and bright browser, to the techy and dark developer. 
+**Overall, a Saved laptop will be better than before.** From the bubbly and bright consumer, to the techy and dark developer. 
 
 **It will be cool to have a Saved laptop.**
 

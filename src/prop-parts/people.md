@@ -27,11 +27,11 @@ Sabian recently completed a final-year internship at EIT where he became familia
 
 Sabian would become an integral part of the Saved team.
 
-### Tahi O’Neill: Gisborne Boys High School graduate
+### Tahi O’Neill: AUT student
 
-Tahi recently completed secondary school and is heading to AUT in 2026. With a love of open technology and hardware design from days-gone-by, Tahi spends time at TEC rescuing technology. 
+Tahi recently completed secondary school and is heading to AUT in 2026. With a love of open technology and consumer hardware product design from days-gone-by, Tahi spends time at TEC rescuing technology. 
 
-Over summer, Tahi would like to support the early development and testing of Saved laptops.
+Tahi would like to support the early development and testing of Saved laptops.
 
 ### Advisory Board
 

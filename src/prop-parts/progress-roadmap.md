@@ -12,16 +12,18 @@
 | *Nov 2025* | *Zorin installed on 40 laptops (EIT intern)* |
 | *Nov 2025* | *Zorin discovery workshop with local Year 10 students (computing enthusiasts)* |
 | *Dec 2025* | *Zorin discovery workshop with local Year 10 students (non-computing enthusiasts)* |
-| Dec-Jan 2026 | Default configuration builds for different personalities and use cases |
-| Feb 2026 | Documentation and contractual agreements |
-| Feb 2026 | First enterprise collection, processing, and upgrade of saved computers |
-| Mar-Apr 2026 | First channel partner established |
-| Mar-Apr 2026 | Storage and processing centre established |
+| *Jan 2026* | *Bluefin testing and configuration* |
+| *Jan 2026* | *Bluefin configuration as a general purpose laptop (Saved GP) for novice computer users needing typical office productivity* |
+| Feb-Mar 2026 | Productionise Saved GP laptop installation and configuration |
+| Mar 2026 | Documentation and contractual agreements |
+| Mar 2026 | First enterprise collection, processing, and upgrade of saved computers |
+| Apr 2026 | First channel partner established |
+| Apr 2026 | Storage and processing centre established |
 | Q2-Q4 2026 | Operationalised end-to-end process from collection to redistributive sale |
 | Q2-Q4 2026 | Adapting builds based on feedback |
-| Q3 2026 | Trial and introduce [Pop!_OS](https://system76.com/pop/) if compatible and ready for production |
-| Q3 2026 | Introduce [Omarchy](https://omarchy.org/) for the developer enthusiast |
-| Q3-Q4 2026 | Drop-ins and workshops |
+| Q3 2026 | Introduce Zorin for where it is better-suited (e.g. additional low-level OS control is required) |
+| Q4 2026 | Introduce [Omarchy](https://omarchy.org/), or an Omarchy-like experience on an immutable OS, for the hardcore resilient developer enthusiast |
+| Q4 2026 | Drop-ins and workshops |
 | 2027 | Extend service to personal computers |
 
 ### Phase 2
