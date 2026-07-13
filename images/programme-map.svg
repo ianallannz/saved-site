@@ -1,0 +1,146 @@
+<svg viewBox="0 0 1200 862" xmlns="http://www.w3.org/2000/svg" font-family="'DM Sans', 'Helvetica Neue', Arial, sans-serif">
+<style>@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@600&amp;display=swap");.title{font-family:"Playfair Display",Georgia,serif;}</style>
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#9A958C"/></marker></defs>
+<rect x="0" y="0" width="1200" height="862" fill="#FBFAF7"/>
+
+<!-- Header -->
+<text class="title" x="50" y="58" font-size="30" fill="#2A2A2A">Diploma in Resilient Technologies</text>
+<rect x="52" y="70" width="118" height="3" fill="#D9614B"/>
+<text x="50" y="94" font-size="13" fill="#7C7A74">Level 5 · 120 credits · 8 credentials × 15 · 1 year · studio delivery</text>
+<text x="1135" y="52" text-anchor="end" font-size="11" letter-spacing="2" fill="#7C7A74">PROGRAMME MAP</text>
+
+<!-- Semester labels -->
+<text x="50" y="130" font-size="12.5" font-weight="600" letter-spacing="1.5" fill="#2A2A2A">SEMESTER ONE · OWNING YOUR COMPUTING</text>
+<text x="655" y="130" font-size="12.5" font-weight="600" letter-spacing="1.5" fill="#2A2A2A">SEMESTER TWO · SERVING YOUR REGION</text>
+<circle cx="56" cy="145" r="3.5" fill="#D9614B"/><text x="66" y="149" font-size="11.5" fill="#7C7A74">Project thread — <tspan fill="#2A2A2A">Sovereign Self</tspan> (C1–C4)</text>
+<circle cx="661" cy="145" r="3.5" fill="#D9614B"/><text x="671" y="149" font-size="11.5" fill="#7C7A74">Project thread — <tspan fill="#2A2A2A">Sovereign Service</tspan> (C5–C8)</text>
+
+<!-- C1 -->
+<rect x="50" y="160" width="455" height="80" rx="6" fill="#FFFFFF" stroke="#E3DFD6" stroke-width="1.2"/>
+<rect x="50" y="160" width="4" height="80" rx="2" fill="#2A2A2A"/>
+<text x="70" y="193" font-size="11" font-weight="600" letter-spacing="1" fill="#7C7A74">C1</text>
+<text x="100" y="193" font-size="13.5" font-weight="600" fill="#2A2A2A">Foundations of Resilient &amp; Sovereign Technology</text>
+<text x="70" y="217" font-size="11" fill="#7C7A74">the why · digital sovereignty · hardware reuse · open source</text>
+
+<!-- C2 -->
+<rect x="50" y="252" width="455" height="80" rx="6" fill="#FFFFFF" stroke="#E3DFD6" stroke-width="1.2"/>
+<rect x="50" y="252" width="4" height="80" rx="2" fill="#2A2A2A"/>
+<text x="70" y="285" font-size="11" font-weight="600" letter-spacing="1" fill="#7C7A74">C2</text>
+<text x="100" y="285" font-size="13.5" font-weight="600" fill="#2A2A2A">Open Operating Systems</text>
+<text x="70" y="309" font-size="11" fill="#7C7A74">Linux · CLI · scripting · servers · containers · security</text>
+
+<!-- C3 -->
+<rect x="50" y="344" width="455" height="80" rx="6" fill="#FFFFFF" stroke="#E3DFD6" stroke-width="1.2"/>
+<rect x="50" y="344" width="4" height="80" rx="2" fill="#2A2A2A"/>
+<text x="70" y="377" font-size="11" font-weight="600" letter-spacing="1" fill="#7C7A74">C3</text>
+<text x="100" y="377" font-size="13.5" font-weight="600" fill="#2A2A2A">Applied Open Source AI</text>
+<text x="70" y="401" font-size="11" fill="#7C7A74">local LLMs · RAG · serving · evaluation · data sovereignty</text>
+
+<!-- C4 -->
+<rect x="50" y="436" width="455" height="80" rx="6" fill="#FFFFFF" stroke="#E3DFD6" stroke-width="1.2"/>
+<rect x="50" y="436" width="4" height="80" rx="2" fill="#2A2A2A"/>
+<text x="70" y="469" font-size="11" font-weight="600" letter-spacing="1" fill="#7C7A74">C4</text>
+<text x="100" y="469" font-size="13.5" font-weight="600" fill="#2A2A2A">Open Web Fundamentals</text>
+<text x="70" y="493" font-size="11" fill="#7C7A74">semantic HTML · modern CSS · vanilla JS · SSG · AI-assisted</text>
+
+<!-- C5 -->
+<rect x="655" y="160" width="455" height="80" rx="6" fill="#FFFFFF" stroke="#E3DFD6" stroke-width="1.2"/>
+<rect x="655" y="160" width="4" height="80" rx="2" fill="#2A2A2A"/>
+<text x="675" y="193" font-size="11" font-weight="600" letter-spacing="1" fill="#7C7A74">C5</text>
+<text x="705" y="193" font-size="13.5" font-weight="600" fill="#2A2A2A">Physical Computing &amp; Sensing</text>
+<text x="675" y="217" font-size="11" fill="#7C7A74">embedded hardware · sensors · Python · MQTT · data capture</text>
+
+<!-- C6 -->
+<rect x="655" y="252" width="455" height="80" rx="6" fill="#FFFFFF" stroke="#E3DFD6" stroke-width="1.2"/>
+<rect x="655" y="252" width="4" height="80" rx="2" fill="#2A2A2A"/>
+<text x="675" y="285" font-size="11" font-weight="600" letter-spacing="1" fill="#7C7A74">C6</text>
+<text x="705" y="285" font-size="13.5" font-weight="600" fill="#2A2A2A">Fabrication &amp; Physical Electronics</text>
+<text x="675" y="309" font-size="11" fill="#7C7A74">electronics · soldering · 3D printing · CAD · repair</text>
+
+<!-- C7 -->
+<rect x="655" y="344" width="455" height="80" rx="6" fill="#FFFFFF" stroke="#E3DFD6" stroke-width="1.2"/>
+<rect x="655" y="344" width="4" height="80" rx="2" fill="#2A2A2A"/>
+<text x="675" y="377" font-size="11" font-weight="600" letter-spacing="1" fill="#7C7A74">C7</text>
+<text x="705" y="377" font-size="13.5" font-weight="600" fill="#2A2A2A">Community Energy Systems</text>
+<text x="675" y="401" font-size="11" fill="#7C7A74">solar · wind · off-grid · micro-grid · energy monitoring</text>
+
+<!-- C8 -->
+<rect x="655" y="436" width="455" height="80" rx="6" fill="#FFFFFF" stroke="#E3DFD6" stroke-width="1.2"/>
+<rect x="655" y="436" width="4" height="80" rx="2" fill="#2A2A2A"/>
+<text x="675" y="469" font-size="11" font-weight="600" letter-spacing="1" fill="#7C7A74">C8</text>
+<text x="705" y="469" font-size="13.5" font-weight="600" fill="#2A2A2A">Aerial Operations &amp; Remote Sensing</text>
+<text x="675" y="493" font-size="11" fill="#7C7A74">drone flight · CAA Part 101 · mission planning · photogrammetry</text>
+
+
+<!-- Prerequisite arrows: C2→C3 (within S1, adjacent) and C2→C5 (cross-column) -->
+<path d="M505,292 C528,292 528,384 505,384" fill="none" stroke="#9A958C" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M505,292 C580,292 580,200 648,200" fill="none" stroke="#9A958C" stroke-width="1.4" marker-end="url(#ah)"/>
+
+<!-- Divider -->
+<line x1="50" y1="554" x2="1135" y2="554" stroke="#E3DFD6" stroke-width="1"/>
+
+<!-- Graduate Profile matrix header -->
+<text x="50" y="580" font-size="15" font-weight="600" fill="#2A2A2A">Graduate Profile coverage</text>
+<circle cx="905" cy="576" r="6" fill="#D9614B"/><text x="916" y="580" font-size="11" fill="#7C7A74">primary</text>
+<circle cx="995" cy="576" r="6" fill="none" stroke="#9A958C" stroke-width="1.6"/><text x="1006" y="580" font-size="11" fill="#7C7A74">reinforced</text>
+
+<!-- S1/S2 dashed divider in matrix -->
+<line x1="770.0" y1="592" x2="770.0" y2="802" stroke="#E3DFD6" stroke-width="1" stroke-dasharray="3 3"/>
+
+<!-- Column headers -->
+<text x="455" y="604" text-anchor="middle" font-size="11" font-weight="600" fill="#2A2A2A">C1</text>
+<text x="545" y="604" text-anchor="middle" font-size="11" font-weight="600" fill="#2A2A2A">C2</text>
+<text x="635" y="604" text-anchor="middle" font-size="11" font-weight="600" fill="#2A2A2A">C3</text>
+<text x="725" y="604" text-anchor="middle" font-size="11" font-weight="600" fill="#2A2A2A">C4</text>
+<text x="815" y="604" text-anchor="middle" font-size="11" font-weight="600" fill="#2A2A2A">C5</text>
+<text x="905" y="604" text-anchor="middle" font-size="11" font-weight="600" fill="#2A2A2A">C6</text>
+<text x="995" y="604" text-anchor="middle" font-size="11" font-weight="600" fill="#2A2A2A">C7</text>
+<text x="1085" y="604" text-anchor="middle" font-size="11" font-weight="600" fill="#2A2A2A">C8</text>
+
+<!-- GPO 1: Advocate for sovereignty — C1 primary; C3, C7 reinforced -->
+<text x="50" y="634" font-size="12" fill="#2A2A2A"><tspan fill="#7C7A74">1</tspan>  Advocate for sovereignty</text>
+<circle cx="455" cy="630" r="6.5" fill="#D9614B"/>
+<circle cx="635" cy="630" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+<circle cx="995" cy="630" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+
+<!-- GPO 2: Own & operate open systems — C2 primary; C5, C6 reinforced -->
+<text x="50" y="661" font-size="12" fill="#2A2A2A"><tspan fill="#7C7A74">2</tspan>  Own &amp; operate open systems</text>
+<circle cx="545" cy="657" r="6.5" fill="#D9614B"/>
+<circle cx="815" cy="657" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+<circle cx="905" cy="657" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+
+<!-- GPO 3: Build on the open web — C4 primary; C5 reinforced -->
+<text x="50" y="688" font-size="12" fill="#2A2A2A"><tspan fill="#7C7A74">3</tspan>  Build on the open web</text>
+<circle cx="725" cy="684" r="6.5" fill="#D9614B"/>
+<circle cx="815" cy="684" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+
+<!-- GPO 4: Deploy sovereign AI — C3 primary; C1 reinforced -->
+<text x="50" y="715" font-size="12" fill="#2A2A2A"><tspan fill="#7C7A74">4</tspan>  Deploy sovereign AI</text>
+<circle cx="455" cy="711" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+<circle cx="635" cy="711" r="6.5" fill="#D9614B"/>
+
+<!-- GPO 5: Build for the physical & remote — C5, C6, C7, C8 primary; C2 reinforced -->
+<text x="50" y="742" font-size="12" fill="#2A2A2A"><tspan fill="#7C7A74">5</tspan>  Build for the physical &amp; remote</text>
+<circle cx="545" cy="738" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+<circle cx="815" cy="738" r="6.5" fill="#D9614B"/>
+<circle cx="905" cy="738" r="6.5" fill="#D9614B"/>
+<circle cx="995" cy="738" r="6.5" fill="#D9614B"/>
+<circle cx="1085" cy="738" r="6.5" fill="#D9614B"/>
+
+<!-- GPO 6: Deliver for real communities — C7, C8 primary; C5, C6 reinforced -->
+<text x="50" y="769" font-size="12" fill="#2A2A2A"><tspan fill="#7C7A74">6</tspan>  Deliver for real communities</text>
+<circle cx="815" cy="765" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+<circle cx="905" cy="765" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+<circle cx="995" cy="765" r="6.5" fill="#D9614B"/>
+<circle cx="1085" cy="765" r="6.5" fill="#D9614B"/>
+
+<!-- GPO 7: Be a professional — C8 primary; C1, C4, C3 reinforced -->
+<text x="50" y="796" font-size="12" fill="#2A2A2A"><tspan fill="#7C7A74">7</tspan>  Be a professional</text>
+<circle cx="455" cy="792" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+<circle cx="635" cy="792" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+<circle cx="725" cy="792" r="6.5" fill="none" stroke="#9A958C" stroke-width="1.6"/>
+<circle cx="1085" cy="792" r="6.5" fill="#D9614B"/>
+
+<!-- Footnote -->
+<text x="50" y="826" font-size="10.5" fill="#7C7A74">Courses are studio-delivered within each semester's integrated project thread. Arrows indicate recommended prerequisites (C2 for C3 and C5). Aligned to the 2025 NZQCF Level 5 descriptors.</text>
+</svg>

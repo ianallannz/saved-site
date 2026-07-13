@@ -10,50 +10,75 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-256x256.png">
     <link rel="stylesheet" href="/css/commit-mono/index.css">
     <link rel="stylesheet" href="/css/custom.css">
+    
     <meta name="theme-color" content="#F4F4F4">
-    <!-- SEO basics -->
     <meta name="description" content="Saved is a new venture in Phase 1 of an ambitious vision. Phase 1: collect, process, upgrade, reimagine, and redistribute Windows 10 laptops, with warranties.">
-    <meta name="keywords" content="Saved, Windows 10, laptops, rescue, Zorin, Linux, cyberpunk, Omarchy, scale, automation, redistribution, digital equity">
+    <meta name="keywords" content="Saved, Windows 10, laptops, rescue, Linux, open source, digital equity, Tairāwhiti">
     <meta name="author" content="Ian Allan">
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="Saved: IT can be saved, and WE can be saved.">
     <meta property="og:description" content="Saved is a new venture in Phase 1 of an ambitious vision. Phase 1: collect, process, upgrade, reimagine, and redistribute Windows 10 laptops, with warranties.">
     <meta property="og:image" content="https://www.saved.co.nz/images/saved-social-share.jpg">
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Saved: IT can be saved, and WE can be saved.">
     <meta name="twitter:description" content="Saved is a new venture in Phase 1 of an ambitious vision. Phase 1: collect, process, upgrade, reimagine, and redistribute Windows 10 laptops, with warranties.">
     <meta name="twitter:image" content="https://www.saved.co.nz/images/saved-social-share.jpg">
-
 </head>
 
 <body class="">
+
     <header>
         <div class="logo">
             
-                <img src="/images/logo.png" alt="Saved Logo">            
+                <img src="/images/logo.png" alt="Saved Logo">
             
-
         </div>
-        <nav>
+        <nav class="site-nav" aria-label="Main navigation">
             <ul>
-                
-                <li class="read-proposal"><a href="/prop">Read proposal</a></li>
-                <li class="read-proposal-mob"><a href="/prop">Proposal</a></li>
-                
-                <li><a href="#believe">Believe</a></li>
+                <li><a href="/products">Computers</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/training">Training</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
             </ul>
         </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
+                <rect width="22" height="2" rx="1" fill="currentColor"/>
+                <rect y="7" width="22" height="2" rx="1" fill="currentColor"/>
+                <rect y="14" width="22" height="2" rx="1" fill="currentColor"/>
+            </svg>
+        </button>
     </header>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav-header">
+            <a href="/"><img src="/images/logo.png" alt="Saved" class="mobile-nav-logo"></a>
+            <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M2 2l16 16M18 2L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav-links" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="/products">Computers</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/training">Training</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
     
 <main>
     <section id="saved-hero">
         <div class="saved-vision">
             <h1>Believe</h1>
             <h2><em>IT</em> can be saved, and <em>WE</em> can be saved.</h2>
-            <p><a href="#linkroll">Let's go</a></p>
+            <p><a href="#the-why">Let's go</a></p>
         </div>
         <div class="saved-laptop">
 
@@ -86,48 +111,54 @@
 
     </section>
 
-    <section id="linkroll">
-        <div class="featured-link">
+    <section id="the-why">
+        <div class="the-situation">
             <h2>The situation</h2>
-            <h3><a href="https://www.404media.co/the-end-of-windows-10-support-is-an-e-waste-disaster-in-the-making/" target="_blank">The end of Windows 10 support is an e-waste disaster in the making</a></h3>
-            <p class="subtitle">In an example of <em>egregious planned obsolescence</em>, as many as 400 million computers will soon hit the waste stream.</p>
-            <p><strong>If we don't <em>believe</em> in an alternative, we will miss the opportunity to <em>save</em> millions of good computers for communities and businesses</strong>.</p>
+            <h3>The end of Windows&nbsp;10 support is an e-waste disaster in the making</h3>
+            <p class="subtitle">In an example of <em><a href="https://www.404media.co/the-end-of-windows-10-support-is-an-e-waste-disaster-in-the-making/" target="_blank">egregious planned obsolescence</a></em>, as many as 400 million computers are on their way to the waste stream.</p>
+            <p><strong>If we don't <em>believe</em> in the alternative, we will miss the opportunity to <em>save</em> millions of good computers for communities and businesses</strong>.</p>
             <p class="signoff">These computers can be <span class="saved">saved</span>.</p>
         </div>
-        <div class="link-roll">
-            <h2>Link-roll (↗)</h2>
-            <ul>
-                <li class="file"><a href="https://ianallannz.github.io/blog/it-can-be-saved-we-can-be-saved/" target="_blank">Introducing Saved | Cross-post from Ian Allan</a></li>
-                <li class="video"><a href="https://www.youtube.com/watch?v=zKjo8Oc2qLk" target="_blank">The Windows 11 Crisis</a></li>
-                <li class="file"><a href="https://www.linuxjournal.com/content/linux-distros-designed-former-windows-users-are-picking-steam" target="_blank">Linux Distros Designed for Former Windows Users Are Picking Up Steam</a></li>
-                <li class="file"><a href="https://www.xda-developers.com/universal-blue-future-linux-desktops-most-people-you-should-try-it-too/" target="_blank">Universal Blue is the future of Linux desktops for most people, and you should try it too</a></li>
-                <li class="video"><a href="https://www.youtube.com/watch?v=P3VDWpLg844" target="_blank">Zorin OS 18 - Replace Windows With This</a></li>
-                <li class="video"><a href="https://www.youtube.com/watch?v=GDJOTEhJ4go" target="_blank">Something Big Is Happening With Linux</a></li>
-            </ul>
-            <ul class="bigpicture">
-                <li class="video"><a href="https://www.youtube.com/watch?v=d2e-c9SF5nE" target="_blank">Cory Doctorow - Rescuing the Internet From "Enshittification" | The Daily Show</a></li>
-                <li class="video"><a href="https://www.youtube.com/watch?v=Yepnhe1T-9U" target="_blank">We Didn't Ask for This Internet | The Ezra Klein Show</a></li>
-                <li class="file"><a href="https://www.businessinsider.com/alexis-ohanian-much-of-the-internet-is-now-dead-2025-10" target="_blank">Reddit cofounder Alexis Ohanian says 'much of the internet is now dead'</a></li>
-                <li class="file"><a href="https://www.authoritarian-stack.info/" target="_blank">The Authoritarian Stack</a></li>
-                <li class="video"><a href="https://www.youtube.com/watch?v=zQThHCB_aec" target="_blank">We have 900 days left | Emad Mostaque</a></li>
-                <li class="file"><a href="https://www.tommydixon.ca/p/the-end-of-our-extremely-online-era" target="_blank">The end of our extremely online era</a></li>
-                <li class="file"><a href="https://www.404media.co/a16z-backed-startup-sells-thousands-of-synthetic-influencers-to-manipulate-social-media-as-a-service/?ref=daily-stories-newsletter" target="_blank">a16z-Backed Startup Sells Thousands of "Synthetic Influencers" to Manipulate Social Media as a Service</a></li>
-                <li class="file"><a href="https://www.jpmorgan.com/insights/global-research/artificial-intelligence/ai-impact-job-growth" target="_blank">Is AI already impacting job growth?</a></li>
-                <li class="file"><a href="https://www.businessinsider.com/ai-impact-economy-gdp-jobless-growth-productivity-2025-10" target="_blank">Goldman Sachs warns of 'jobless growth' in the US as AI fuels output but not jobs</a></li>                
-            </ul>
+        <div class="the-what">
+            <div class="product-teaser">
+                <p class="section-label">General purpose laptop</p>
+                <h3>Saved GP 14</h3>
+                <div class="product-teaser-image">
+                    <img src="/images/product-saved-gp-14-00.jpg" alt="Saved GP 14">
+                </div>
+                <p>A bloody good robust 14-inch laptop. Not just reclaimed, but reimagined as an easy-to-use, fast, secure, everyday computer.</p>
+                <a href="/products/" class="cta-link">Explore</a>
+            </div>
         </div>
-        
+
     </section>
+    <section id="training">
+        <div class="thestudio">
+            <figure>
+                <img src="images/prop-brand-context4.jpg">
+                <figcaption>Studio space, imagined. Source: Nano Banana.</figcaption>
+            </figure>
+        </div>
+        <div class="thequal">
+            <h2>Training</h2>
+            <div class="blurb">
+                <h2>Diploma in Resilient Technologies</h2>
+                <p class="subtitle">A proposed qualification that recognises the realities of life in Tairāwhiti and regions like it, and the societal pressures emerging globally.</p>
+                <p>Learn real technology skills, real tools, and the real innovation your community needs. It's time for genuine ownership of our digital futures.</p>
+                <p><a href="/training/">Sounds like me</a></p>
+            </div>
+        </div>
+    </section>
+
     <section id="theanswer">
         <div class="theshop">
             <figure>
                 <img src="images/prop-brand-context3.jpg">
-                <figcaption><strong>Imagining in-store ambience. Source: Nano Banana.</strong><br>
-Initial prompt: an image in-store, I want it to have a plywood feel for the display of the laptops etc, a bit like a local izakaya/bar in Japan - a bit of a lived-in feel, definitely not too rustic, and still a cool vibe.</figcaption>
+                <figcaption>Store ambience, imagined. Source: Nano Banana.</figcaption>
             </figure>
         </div>
         <div class="thehow">
-            <h2>The answer</h2>
+            <h2>About</h2>
             <div class="logo-container">
                 <div class="logo-left">
                     <img src="images/saved-logo-left.png">
@@ -137,18 +168,19 @@ Initial prompt: an image in-store, I want it to have a plywood feel for the disp
                     <img src="images/saved-logo-right-inv.png">
                 </div>
             </div>
+
             <div class="blurb">
-                <h2>A new venture entering Phase 1 of an ambitious vision.</h2>
-                <p><strong>Phase 1:</strong> collect, process, upgrade, <em>reimagine</em>, and redistribute ex-Windows 10 laptops at scale — with warranties.</p>
-                <p><a href="/prop">Read the proposal</a></p>
+                <p class="subtitle">Saved is an emerging venture on the East Coast of New Zealand; now in Phase 1 with Phase 2 development in progress.</p>
+                <p><strong>Phase 1:</strong> collect, process, upgrade, <em>reimagine</em>, and redistribute ex-Windows 10 laptops at scale. Use funds to support...</p>
+                <p><strong>Phase 2:</strong> development of qualification pathways for students who want to build, own, and operate resilient technologies.</p>
+                <p><a href="/about">Find out more</a></p>
             </div>
         </div>
     </section>
     <section id="believe">
         <div class="form-container">
             <h2>Believe</h2>
-            <p class="subtitle">Something to add? <strong>We can make it happen.</strong></p>
-            <p>The proposal is licensed for you to pick it up and run with it! </p>
+            <p class="subtitle">Something to add? <strong>Let's make it happen.</strong></p>
             <form target="_blank" action="https://formsubmit.co/4d455b2d293af18238b5e7251b9f278d" method="POST">
                 <div class="form-group">
                     <div class="form-row">
@@ -170,15 +202,83 @@ Initial prompt: an image in-store, I want it to have a plywood feel for the disp
         </div>
     </section>
 </main>
-<footer>
-        <div class="copyright">
-            <p>© 2026 <a href="https://ianallannz.github.io">Ian Allan</a>. License: CC BY-SA 4.0.</<p>
-        </div>
-</footer>
 
+    
+    <footer>
+        <div class="footer-inner">
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li>
+                        <a href="/about">About</a>
+                        <ul>
+                            <li><a href="/prop">Founding proposal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/products">Computers</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li>
+                        <a href="/training">Training</a>
+                        <ul>
+                            <li><a href="/diploma">Proposed diploma</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-brand">
+                <a href="/"><img src="/images/logo.png" alt="Saved Logo" class="footer-logo"></a>
+                <p class="footer-tagline">Believe <em>IT</em> can be saved, and <em>WE</em> can be saved.</p>
+                <div class="copyright">
+                    <p>© 2026 <a href="https://ianallannz.github.io">Ian Allan</a>.<br>All rights reserved unless specified otherwise.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    
+<div id="modal-contact" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-contact-title" inert>
+    <div class="modal-content">
+        <button type="button" class="modal-close" aria-label="Close contact form">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M2 2l16 16M18 2L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="modal-scroll">
+            <div class="form-container">
+                <h2 id="modal-contact-title">Believe</h2>
+                <p class="subtitle">Make it happen.</p>
+                <p>Requesting a computer? Requesting a collection? Feeling digitally dependent? Interested in the qualification?</p>
+                <p>Let's meet up &#128077;</p>
+                <form target="_blank" action="https://formsubmit.co/4d455b2d293af18238b5e7251b9f278d" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Email address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-full">
+                        <textarea placeholder="Your message" class="form-control" name="message" rows="8" required></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="Message received through saved.co.nz">
+                    <input type="hidden" name="_next" value="https://saved.co.nz/thanks/">
+                    <button type="submit">Get in touch</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="/js/site-nav.js" defer></script>
     
         <script src="/js/custom.js" defer></script>
     
+
 </body>
 
 </html>
