@@ -14,30 +14,34 @@
 | *Dec 2025* | *Zorin discovery workshop with local Year 10 students (non-computing enthusiasts)* |
 | *Jan 2026* | *Bluefin testing and configuration* |
 | *Jan 2026* | *Bluefin configuration as a general purpose laptop (Saved GP) for novice computer users needing typical office productivity* |
-| Feb-Mar 2026 | Productionise Saved GP laptop installation and configuration |
-| Mar 2026 | Documentation and contractual agreements |
-| Mar 2026 | First enterprise collection, processing, and upgrade of saved computers |
-| Apr 2026 | First channel partner established |
-| Apr 2026 | Storage and processing centre established |
-| Q2-Q4 2026 | Operationalised end-to-end process from collection to redistributive sale |
+| *Feb-Mar 2026* | *Productionise Saved GP laptop installation and configuration* |
+| *Apr 2026* | *First pilot channel partner established* |
+| Apr-Aug 2026 | Process documentation |
+| Aug 2026 | Second enterprise collection, processing, and upgrade of saved computers |
+| Oct 2026 | Storage and processing centre established |
 | Q2-Q4 2026 | Adapting builds based on feedback |
-| Q3 2026 | Introduce Zorin for where it is better-suited (e.g. additional low-level OS control is required) |
-| Q4 2026 | Introduce [Omarchy](https://omarchy.org/), or an Omarchy-like experience on an immutable OS, for the hardcore resilient developer enthusiast |
-| Q4 2026 | Drop-ins and workshops |
+| Q4 2026 | Introduce Zorin for where it is better-suited (e.g. Maker Laptops) |
+| Q1 2027 | Introduce [Omarchy](https://omarchy.org/), or an Omarchy-like experience on an immutable OS, for the hardcore resilient developer enthusiast |
 | 2027 | Extend service to personal computers |
 
 ### Phase 2
 
 | When | What |
 |:---|:---|
-| Q1 2027 | First enterprise support and maintenance agreement signed |
-| Q2 2027 | Test franchise opportunity |
+| *Jun 2026* | *Resilient technologies qualification design* |
+| Jul-Oct 2026 | Establish education accreditation partner(s) |
+| Sep-Nov 2026 | Establish studio learning space |
+| Dec 2026 | First drop-ins and workshops |
+| Q1 2027 | First qualification accredited |
+| Q1 2027 | First qualification enrolments (micro-credentials) |
+| Q4 2027 | Retail presence representing wider brand values and products |
 
 ### Phase 3
 
 | When | What |
 |:---|:---|
-| 2028 | Retail presence representing wider brand values and products |
-| 2028 | Begin provision of certifications |
+| Q3 2027 | Enterprise contractual agreements written |
+| Q1 2028 | First enterprise support and maintenance agreement signed |
+| Q3 2028 | Test franchise opportunity |
 
 

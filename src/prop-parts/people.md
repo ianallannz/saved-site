@@ -21,18 +21,6 @@ Venture designer and ethical technologist based in Gisborne, New Zealand, at [ia
 | 2025 | Re-energised indie digital designer and developer |
 | 2025 | Failed district council candidate advocating for "a new abundance built on place not things"—"a self-sufficient and resilient place" |
 
-### Sabian Coomber: EIT Bachelor of Computing graduate
-
-Sabian recently completed a final-year internship at EIT where he became familiar with commercial-grade server builds, Zorin installations on 5-10 year old laptops, inventory management, and the early stages of installation scripting and technical process automation.
-
-Sabian would become an integral part of the Saved team.
-
-### Tahi O’Neill: AUT student
-
-Tahi recently completed secondary school and is heading to AUT in 2026. With a love of open technology and consumer hardware product design from days-gone-by, Tahi spends time at TEC rescuing technology. 
-
-Tahi would like to support the early development and testing of Saved laptops.
-
 ### Advisory Board
 
-To be determined, preferably from the local ecosystem.
+To be determined, from the local ecosystem.

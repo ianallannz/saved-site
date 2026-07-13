@@ -1,0 +1,395 @@
+[org/gnome/Ptyxis]
+interface-style='dark'
+window-size=(uint32 80, uint32 23)
+
+[org/gnome/Ptyxis/Profiles/2871e8027773ae74d6c87a5f659bbc74]
+palette='catppuccin-dynamic'
+
+[org/gnome/control-center]
+last-panel='power'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['System', 'Utilities', 'YaST', 'Pardus']
+
+[org/gnome/desktop/app-folders/folders/Containers]
+apps=['io.github.dvlv.boxbuddyrs.desktop', 'com.github.marhkb.Pods.desktop']
+categories=['Distrobox']
+name='Containers'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Development]
+apps=['dev-pod.desktop', 'code.desktop', 'virt-manager.desktop', 'io.podman_desktop.PodmanDesktop.desktop']
+categories=['Development', 'IDE']
+excluded-apps=['org.gnome.Sysprof.desktop']
+name='Development'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Games]
+categories=['Game']
+excluded-apps=['steam.desktop', 'net.lutris.Lutris.desktop', 'io.github.benjamimgois.goverlay.desktop', 'com.vysp3r.ProtonPlus.desktop', 'io.github.fastrizwaan.WineZGUI.desktop']
+name='Games'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/GamingUtilities]
+apps=['protontricks.desktop', 'discover_overlay_configure.desktop', 'com.vysp3r.ProtonPlus.desktop', 'io.github.benjamimgois.goverlay.desktop', 'com.gerbilsoft.rom-properties.rp-config.desktop', 'steamos-nested-desktop.desktop']
+name='Gaming Utilities'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Productivity]
+apps=['simple-scan.desktop', 'org.gnome.Papers.desktop', 'org.gnome.Connections.desktop']
+name='Productivity'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/System]
+apps=['org.gnome.DejaDup.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.tweaks.desktop']
+name='X-GNOME-Shell-System.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['org.gnome.Connections.desktop', 'org.gnome.Papers.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Loupe.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Shell-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Wine]
+apps=['winetricks.desktop']
+categories=['X-Wine', 'wine-wine']
+name='Wine'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///var/home/ianallan/.local/share/backgrounds/2025-12-29-15-43-36-ynh.png'
+picture-uri-dark='file:///var/home/ianallan/.local/share/backgrounds/2025-12-29-15-43-36-ynh.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+sources=[('xkb', 'us')]
+
+[org/gnome/desktop/interface]
+accent-color='teal'
+document-font-name='Adwaita Sans Medium 10 @wght=500'
+enable-animations=true
+font-name='Adwaita Sans Medium 10 @wght=500'
+icon-theme='Adwaita'
+
+[org/gnome/desktop/notifications]
+application-children=['gnome-power-panel', 'gnome-about-panel', 'com-google-chrome', 'org-gnome-ptyxis', 'com-spotify-client', 'com-rafaelmardojai-blanket', 'org-gnome-extensions']
+
+[org/gnome/desktop/notifications/application/com-google-chrome]
+application-id='com.google.Chrome.desktop'
+
+[org/gnome/desktop/notifications/application/com-rafaelmardojai-blanket]
+application-id='com.rafaelmardojai.Blanket.desktop'
+
+[org/gnome/desktop/notifications/application/com-spotify-client]
+application-id='com.spotify.Client.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-about-panel]
+application-id='gnome-about-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-ptyxis]
+application-id='org.gnome.Ptyxis.desktop'
+
+[org/gnome/desktop/privacy]
+report-technical-problems=false
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///var/home/ianallan/.local/share/backgrounds/2025-12-29-15-43-36-ynh.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/wm/preferences]
+focus-mode='sloppy'
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/login-screen]
+enable-fingerprint-authentication=true
+enable-smartcard-authentication=false
+
+[org/gnome/mutter]
+overlay-key='Super_L'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
+maximized=false
+
+[org/gnome/portal/filechooser/com.github.PintaProject.Pinta]
+last-folder-path='/var/home/ianallan/.local/share/icons/hicolor/256x256/apps'
+
+[org/gnome/portal/filechooser/com.google.Chrome]
+last-folder-path='/var/home/ianallan/.local/share/icons'
+
+[org/gnome/portal/filechooser/net.codelogistics.webapps]
+last-folder-path='/var/home/ianallan/.local/share/icons/hicolor/256x256/apps'
+
+[org/gnome/portal/filechooser/net.retrodeck.retrodeck]
+last-folder-path='/var/home/ianallan/RetroDeck'
+
+[org/gnome/portal/filechooser/org.gnome.Settings]
+last-folder-path='/var/home/ianallan/Downloads'
+
+[org/gnome/portal/filechooser/org.mozilla.firefox]
+last-folder-path='/var/home/ianallan/Pictures/Profile'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-last-coordinates=(-39.633299999999998, 176.983)
+
+[org/gnome/settings-daemon/plugins/housekeeping]
+donation-reminder-last-shown=int64 1766984469145503
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='/usr/bin/ptyxis --new-window'
+name='Ptyxis'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Alt>Return'
+command='/usr/bin/ptyxis --new-window'
+name='Ptyxis Alt'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Control><Shift>Escape'
+command='flatpak run io.missioncenter.MissionCenter'
+name='mission-center'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
+binding='<Control><Alt>BackSpace'
+command='flatpak run com.jeffser.Alpaca'
+name='Launch Alpaca'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
+binding='<Super>Print'
+command='flatpak run be.alexandervanhee.gradia --screenshot'
+name='Take and edit screenshot'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
+binding='<Control><Alt>space'
+command='flatpak run it.mijorus.smile'
+name='Open up the emoji picker'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6]
+binding='<Super>period'
+command='flatpak run it.mijorus.smile'
+name='Open up the emoji picker (Alt)'
+
+[org/gnome/shell]
+app-picker-layout=[{'org.gnome.Contacts.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'org.gnome.Aisleriot.desktop': <{'position': <4>}>, 'org.gnome.SimpleScan.desktop': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>, 'io.github.kolunmi.Bazaar.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'org.gnome.Snapshot.desktop': <{'position': <9>}>, 'org.gnome.Characters.desktop': <{'position': <10>}>, 'com.rafaelmardojai.Blanket.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'org.gnome.Calculator.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'org.gnome.Calendar.desktop': <{'position': <16>}>, 'discourse.desktop': <{'position': <17>}>, 'net.codelogistics.webapps.webapp_6fcd7a21_ed42_405b_baad_00c8b4983d39.desktop': <{'position': <18>}>, 'com.ranfdev.DistroShelf.desktop': <{'position': <19>}>, 'documentation.desktop': <{'position': <20>}>, 'net.codelogistics.webapps.webapp_0b234334_6e1c_4ad9_93a0_cd231e872b20.desktop': <{'position': <21>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <22>}>, 'org.gnome.Extensions.desktop': <{'position': <23>}>}, {'net.codelogistics.webapps.webapp_55c8a3fe_e196_463c_a7a6_61ef43d60e42.desktop': <{'position': <0>}>, 'org.gnome.Nautilus.desktop': <{'position': <1>}>, 'org.mozilla.firefox.desktop': <{'position': <2>}>, 'firewall-config.desktop': <{'position': <3>}>, 'org.gnome.Firmware.desktop': <{'position': <4>}>, 'com.github.tchx84.Flatseal.desktop': <{'position': <5>}>, 'org.gimp.GIMP.desktop': <{'position': <6>}>, 'io.github.flattool.Ignition.desktop': <{'position': <7>}>, 'io.gitlab.adhami3310.Impression.desktop': <{'position': <8>}>, 'input-remapper-gtk.desktop': <{'position': <9>}>, 'org.gnome.Mahjongg.desktop': <{'position': <10>}>, 'net.codelogistics.webapps.webapp_34705731_329b_4f8b_8113_6c1421be0dde.desktop': <{'position': <11>}>, 'io.missioncenter.MissionCenter.desktop': <{'position': <12>}>, 'com.github.PintaProject.Pinta.desktop': <{'position': <13>}>, 'net.codelogistics.webapps.webapp_c8500613_5cb5_49c6_b710_dac4bbd9c482.desktop': <{'position': <14>}>, 'python-playground.desktop': <{'position': <15>}>, 'org.gnome.Quadrapassel.desktop': <{'position': <16>}>, 'page.tesk.Refine.desktop': <{'position': <17>}>, 'net.retrodeck.retrodeck.desktop': <{'position': <18>}>, 'net.retrodeck.retrodeck.Configurator.desktop': <{'position': <19>}>, 'com.spotify.Client.desktop': <{'position': <20>}>, 'system-update.desktop': <{'position': <21>}>, 'org.gnome.Ptyxis.desktop': <{'position': <22>}>, 'org.gnome.TextEditor.desktop': <{'position': <23>}>}, {'org.thonny.Thonny.desktop': <{'position': <0>}>, 'org.mozilla.Thunderbird.desktop': <{'position': <1>}>, 'io.github.flattool.Warehouse.desktop': <{'position': <2>}>, 'org.gnome.Epiphany.desktop': <{'position': <3>}>, 'net.codelogistics.webapps.desktop': <{'position': <4>}>, 'net.codelogistics.webapps.webapp_37cb7362_0ee2_472b_892f_e993000ec8df.desktop': <{'position': <5>}>}]
+command-history=['r']
+disable-user-extensions=false
+disabled-extensions=['logomenu@aryan_k', 'dash-to-dock@micxgx.gmail.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'gsconnect@andyholmes.github.io', 'tailscale@joaophi.github.com', 'search-light@icedman.github.com', 'just-perfection-desktop@just-perfection', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'lockscreen-extension@pratap.fastmail.fm', 'windowIsReady_Remover@nunofarruca@gmail.com']
+favorite-apps=['com.brave.Browser.desktop', 'com.google.Chrome.desktop', 'org.onlyoffice.desktopeditors.desktop']
+last-selected-power-profile='power-saver'
+welcome-dialog-last-shown-version='49.1'
+
+[org/gnome/shell/extensions/Logo-menu]
+hide-forcequit=true
+menu-button-extensions-app='com.mattjakeman.ExtensionManager.desktop'
+menu-button-icon-image=30
+menu-button-icon-size=20
+menu-button-software-center='/usr/bin/flatpak run io.github.kolunmi.Bazaar'
+menu-button-system-monitor='/usr/bin/missioncenter-helper'
+menu-button-terminal='xdg-terminal-exec'
+show-activities-button=true
+show-distroshelf=true
+show-gamemode=false
+show-lockscreen=false
+show-power-option=false
+symbolic-icon=true
+
+[org/gnome/shell/extensions/arcmenu]
+application-shortcuts=[{'id': 'ArcMenu_Software', 'name': 'Software'}, {'id': 'org.gnome.Settings.desktop'}, {'id': 'org.gnome.tweaks.desktop'}, {'id': 'ArcMenu_ActivitiesOverview', 'name': 'Activities Overview', 'icon': 'view-fullscreen-symbolic'}]
+apps-show-extra-details=false
+left-panel-width=315
+menu-background-color='rgba(48,48,49,0.98)'
+menu-border-color='rgb(60,60,60)'
+menu-border-width=1
+menu-button-appearance='Icon_Text'
+menu-button-bg-color=(false, 'rgba(242,242,242,0.2)')
+menu-button-border-radius=(true, 24)
+menu-button-fg-color=(false, 'rgb(242,242,242)')
+menu-button-hover-bg-color=(true, 'rgba(242,242,242,0.15)')
+menu-button-icon='/var/home/ianallan/Pictures/UI/saved-taskbar-menu-w.png'
+menu-button-icon-size=26
+menu-button-padding=-1
+menu-button-position-offset=0
+menu-button-text='Menu'
+menu-font-size=11
+menu-foreground-color='rgb(223,223,223)'
+menu-item-active-bg-color='rgb(25,98,163)'
+menu-item-active-fg-color='rgb(255,255,255)'
+menu-item-grid-icon-size='Large'
+menu-item-hover-bg-color='rgb(21,83,158)'
+menu-item-hover-fg-color='rgb(255,255,255)'
+menu-item-icon-size='Default'
+menu-layout='Zest'
+menu-separator-color='rgba(255,255,255,0.1)'
+override-menu-theme=true
+pinned-apps=[{'id': 'com.brave.Browser.desktop'}, {'id': 'com.google.Chrome.desktop'}, {'id': 'org.onlyoffice.desktopeditors.desktop'}, {'id': 'com.github.PintaProject.Pinta.desktop'}, {'id': 'io.github.kolunmi.Bazaar.desktop'}]
+pop-folders-data={'Library Home': 'Library Home', 'Utilities': 'Utilities', 'Productivity': 'Productivity'}
+prefs-visible-page=0
+quicklinks-item-icon-size='Default'
+recently-installed-apps=['WordWeb.desktop', 'com.microsoft.WordWeb.desktop', 'word.office.com.Microsoft-edge.desktop', 'net.codelogistics.webapps.webapp_77bd224b_6a98_4c00_85cd_dc78f71b6a2a.desktop', 'net.codelogistics.webapps.webapp_f5a6fefd_3545_411c_970f_177ee805f477.desktop', 'com.github.vikdevelop.photopea_app.desktop', 'org.thonny.Thonny.desktop']
+right-panel-width=200
+search-entry-border-radius=(true, 25)
+show-activities-button=true
+update-notifier-project-version=71
+windows-layout-extra-shortcuts=[{'id': 'org.gnome.Nautilus.desktop'}, {'id': 'org.gnome.Ptyxis.desktop'}, {'id': 'org.gnome.Settings.desktop'}]
+
+[org/gnome/shell/extensions/blur-my-shell]
+rounded-blur-found=false
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/dash-to-dock]
+background-opacity=0.0
+dash-max-icon-size=32
+disable-overview-on-startup=true
+dock-position='BOTTOM'
+height-fraction=0.90000000000000002
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+transparency-mode='FIXED'
+
+[org/gnome/shell/extensions/dash-to-panel]
+animate-appicon-hover=true
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+appicon-margin=0
+appicon-padding=8
+dot-position='BOTTOM'
+dot-style-unfocused='DOTS'
+extension-version=73
+group-apps=true
+group-apps-label-font-size=12
+group-apps-use-launchers=true
+hotkeys-overlay-combo='TEMPORARILY'
+leftbox-padding=0
+leftbox-size=12
+panel-anchors='{"CMN-0x00000000":"MIDDLE"}'
+panel-element-positions='{"CMN-0x00000000":[{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-lengths='{}'
+panel-positions='{}'
+panel-side-padding=0
+panel-sizes='{"CMN-0x00000000":44}'
+prefs-opened=false
+show-apps-icon-file=''
+show-favorites=true
+show-running-apps=true
+status-icon-padding=0
+trans-border-use-custom-color=true
+trans-panel-opacity=0.0
+trans-use-border=false
+trans-use-custom-gradient=false
+trans-use-custom-opacity=true
+tray-padding=2
+tray-size=12
+window-preview-title-position='TOP'
+
+[org/gnome/shell/extensions/gsconnect]
+devices=['85a114530b62450d900f5d4f75f3a164']
+missing-openssl=false
+name='bluefin'
+
+[org/gnome/shell/extensions/gsconnect/device/85a114530b62450d900f5d4f75f3a164]
+incoming-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
+last-connection='lan://192.168.68.65:1716'
+name='bluefin'
+outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report.request', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.runcommand.request', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.sms.request', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
+supported-plugins=['battery', 'clipboard', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'runcommand', 'share']
+type='laptop'
+
+[org/gnome/shell/extensions/just-perfection]
+controls-manager-spacing-size=0
+panel=true
+theme=false
+top-panel-position=0
+
+[org/gnome/shell/extensions/lockscreen-extension]
+hide-lockscreen-extension-button=true
+
+[org/gnome/shell/extensions/search-light]
+animation-speed=200.0
+background-color=(0.032799992710351944, 0.020000005140900612, 0.10000000149011612, 0.80000001192092896)
+blur-brightness=0.59999999999999998
+blur-sigma=30.0
+border-color=(0.23000000000000001, 0.23000000000000001, 0.23000000000000001, 1.0)
+border-radius=1.6499999999999999
+border-thickness=0
+entry-font-size=1
+monitor-count=1
+popup-at-cursor-monitor=false
+preferred-monitor=0
+scale-height=0.14999999999999999
+scale-width=0.10000000000000001
+shortcut-search=['<Super>space']
+show-panel-icon=false
+
+[org/gnome/system/location]
+enabled=true
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.032799988985061646, 0.019999999552965164, 0.10000000149011612, 0.80000001192092896), (0.0, 0.0, 0.0, 0.80000001192092896)]
+selected-color=(true, 0.032799988985061646, 0.019999999552965164, 0.10000000149011612, 0.80000001192092896)
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(857, 326)

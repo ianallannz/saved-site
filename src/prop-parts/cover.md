@@ -5,8 +5,8 @@
 ### Executive overview
 
 ```
-Version 1.3
-13 February 2026
+Version 2.0
+13 July 2026
 ```
 
 
@@ -30,6 +30,7 @@ East Coast, New Zealand
 | 1.2 | 17/12/2025 | Rebuilt prop using 11ty.dev |
 | 1.2.1 | 18/12/2025 | Channel partner edits |
 | 1.3 | 13/02/2026 | Introduction of Bluefin as preferred fleet solution |
+| 2.0 | 13/07/2026 | Reordering of phases 2 and 3; updates to operating model, progress and roadmap, ecosystem, people, risks, and next-steps |
 
 
 Saved: a venture proposal  © 2026 by Ian Allan is licensed under **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).**

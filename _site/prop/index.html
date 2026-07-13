@@ -10,45 +10,74 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-256x256.png">
     <link rel="stylesheet" href="/css/commit-mono/index.css">
     <link rel="stylesheet" href="/css/custom.css">
+    
     <meta name="theme-color" content="#F4F4F4">
-    <!-- SEO basics -->
     <meta name="description" content="Saved is a new venture in Phase 1 of an amitious vision. Phase 1: collect, process, upgrade, reimagine, and redistribute Windows 10 laptops, with warranties.">
-    <meta name="keywords" content="Saved, Windows 10, laptops, rescue, Zorin, Linux, cyberpunk, Omarchy, scale, automation, redistribution, digital equity">
+    <meta name="keywords" content="Saved, Windows 10, laptops, rescue, Linux, open source, digital equity, Tairāwhiti">
     <meta name="author" content="Ian Allan">
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="Saved: IT can be saved, and WE can be saved.">
     <meta property="og:description" content="Saved is a new venture in Phase 1 of an amitious vision. Phase 1: collect, process, upgrade, reimagine, and redistribute Windows 10 laptops, with warranties.">
     <meta property="og:image" content="https://www.saved.co.nz/images/saved-social-share.jpg">
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Saved: IT can be saved, and WE can be saved.">
     <meta name="twitter:description" content="Saved is a new venture in Phase 1 of an amitious vision. Phase 1: collect, process, upgrade, reimagine, and redistribute Windows 10 laptops, with warranties.">
     <meta name="twitter:image" content="https://www.saved.co.nz/images/saved-social-share.jpg">
-
 </head>
 
 <body class="prop">
+
     <header>
         <div class="logo">
             
                 <a href="/"><img src="/images/logo.png" alt="Saved Logo"></a>
             
-
         </div>
-        <nav>
+        <nav class="site-nav" aria-label="Main navigation">
             <ul>
-                
-                <li><a href="#believe">Believe</a></li>
+                <li><a href="/products">Computers</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/training">Training</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
             </ul>
         </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
+                <rect width="22" height="2" rx="1" fill="currentColor"/>
+                <rect y="7" width="22" height="2" rx="1" fill="currentColor"/>
+                <rect y="14" width="22" height="2" rx="1" fill="currentColor"/>
+            </svg>
+        </button>
     </header>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav-header">
+            <a href="/"><img src="/images/logo.png" alt="Saved" class="mobile-nav-logo"></a>
+            <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M2 2l16 16M18 2L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav-links" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="/products">Computers</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/training">Training</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
     
 <button class="hamburger" aria-controls="prop-nav" aria-expanded="false">
   ☰
 </button>
 
+<div class="prop-layout">
 <nav id="prop-nav" class="prop-nav">
   <ul>
     <li class="h2"><a href="#saved-a-venture-proposal">Saved: A venture proposal</a></li>
@@ -56,8 +85,8 @@
 <li class="h4"><a href="#revision-history">Revision history</a></li>
     <li class="h2"><a href="#vision">Vision</a></li>
 <li class="h3"><a href="#phase-1-save-local-windows-10-laptops">Phase 1: Save local Windows 10 laptops</a></li>
-<li class="h3"><a href="#phase-2-enterprise-and-nationwide-expansion">Phase 2: Enterprise & nationwide expansion</a></li>
-<li class="h3"><a href="#phase-3-deep-consumer-connection">Phase 3: Deep consumer connection</a></li>
+<li class="h3"><a href="#phase-2-community-connection">Phase 2: Community connection</a></li>
+<li class="h3"><a href="#phase-3-enterprise-and-nationwide-expansion">Phase 3: Enterprise & nationwide expansion</a></li>
     <li class="h2"><a href="#problem">Problem</a></li>
 <li class="h3"><a href="#immediate-problem">Immediate problem</a></li>
 <li class="h3"><a href="#wider-challenges">Wider challenges</a></li>
@@ -78,17 +107,17 @@
 <li class="h4"><a href="#warranty-support">Warranty support</a></li>
 <li class="h4"><a href="#workshops">Workshops</a></li>
     <li class="h2"><a href="#solution-phase-2-and-phase-3">Solution: Phase 2 and Phase 3</a></li>
-<li class="h3"><a href="#phase-2-expansion">Phase 2: Expansion</a></li>
+<li class="h3"><a href="#phase-2-community-connection">Phase 2: Community connection</a></li>
+<li class="h4"><a href="#qualification-pathways">Qualification pathways</a></li>
+<li class="h4"><a href="#hybrid-retail-presence">Hybrid retail presence</a></li>
+<li class="h3"><a href="#phase-3-expansion">Phase 3: Expansion</a></li>
 <li class="h4"><a href="#enterprise-services">Enterprise services</a></li>
 <li class="h4"><a href="#franchise-opportunity">Franchise opportunity</a></li>
-<li class="h3"><a href="#phase-3-consumer-connection">Phase 3: Consumer connection</a></li>
-<li class="h4"><a href="#hybrid-retail-presence">Hybrid retail presence</a></li>
-<li class="h4"><a href="#certifications-and-qualifications">Certifications and qualifications</a></li>
     <li class="h2"><a href="#operating-model">Operating model</a></li>
 <li class="h3"><a href="#phase-1">Phase 1</a></li>
 <li class="h3"><a href="#phase-2">Phase 2</a></li>
 <li class="h3"><a href="#phase-3">Phase 3</a></li>
-<li class="h3"><a href="#private-company-or-social-enterprise">Private company or social enterprise</a></li>
+<li class="h3"><a href="#legal-structure">Legal structure</a></li>
     <li class="h2"><a href="#progress-and-roadmap">Progress and roadmap</a></li>
 <li class="h3"><a href="#phase-1">Phase 1</a></li>
 <li class="h3"><a href="#phase-2">Phase 2</a></li>
@@ -108,8 +137,6 @@
 <li class="h3"><a href="#regional-development">Regional development</a></li>
     <li class="h2"><a href="#people">People</a></li>
 <li class="h3"><a href="#ian-allan-founder">Ian Allan: Founder</a></li>
-<li class="h3"><a href="#sabian-coomber-eit-bachelor-of-computing-graduate">Sabian Coomber: EIT Bachelor of Computing graduate</a></li>
-<li class="h3"><a href="#tahi-oneill-aut-student">Tahi O’Neill: AUT student</a></li>
 <li class="h3"><a href="#advisory-board">Advisory Board</a></li>
     <li class="h2"><a href="#risks">Risks</a></li>
     <li class="h2"><a href="#next-steps">Next steps</a></li>
@@ -120,8 +147,8 @@
         <p><a href="/"><img src="../images/prop-logo-sq.png" alt="Saved logo"></a></p>
 <h2 id="saved-a-venture-proposal" tabindex="-1">Saved: A venture proposal <a class="direct-link" href="#saved-a-venture-proposal">#</a></h2>
 <h3 id="executive-overview" tabindex="-1">Executive overview <a class="direct-link" href="#executive-overview">#</a></h3>
-<pre><code>Version 1.3
-13 February 2026
+<pre><code>Version 2.0
+13 July 2026
 </code></pre>
 <p><strong>Ian Allan</strong></p>
 <p>Venture designer</p>
@@ -168,6 +195,11 @@
 <td style="text-align:left">13/02/2026</td>
 <td style="text-align:left">Introduction of Bluefin as preferred fleet solution</td>
 </tr>
+<tr>
+<td style="text-align:left">2.0</td>
+<td style="text-align:left">13/07/2026</td>
+<td style="text-align:left">Reordering of phases 2 and 3; updates to operating model, progress and roadmap, ecosystem, people, risks, and next-steps</td>
+</tr>
 </tbody>
 </table>
 <p>Saved: a venture proposal  © 2026 by Ian Allan is licensed under <strong><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</strong></p>
@@ -179,20 +211,19 @@
 <h3 id="phase-1-save-local-windows-10-laptops" tabindex="-1">Phase 1: Save local Windows 10 laptops <a class="direct-link" href="#phase-1-save-local-windows-10-laptops">#</a></h3>
 <p>Saved is a Tairāwhiti-focused commercial alternative to “Recycle A Device” schemes.</p>
 <p>The primary focus is <strong>rescuing Windows 10 laptops and upgrading them at scale into reimagined Saved laptops</strong> through process automation, open systems, product development, and warranties.</p>
-<h3 id="phase-2-enterprise-and-nationwide-expansion" tabindex="-1">Phase 2: Enterprise &amp; nationwide expansion <a class="direct-link" href="#phase-2-enterprise-and-nationwide-expansion">#</a></h3>
+<h3 id="phase-2-community-connection" tabindex="-1">Phase 2: Community connection <a class="direct-link" href="#phase-2-community-connection">#</a></h3>
+<p>Saved is:</p>
+<ul>
+<li>A provider of <strong>qualification pathways</strong> in sovereign and resilient technologies</li>
+<li>A <strong>resilient diversified brand</strong> in the market for young (15-30, and the young-at-heart) indie creators, artists, developers, environmentalists—the new cyberpunks</li>
+<li>For people and organisations conscious of their footprint, the cost of living, bigtech lock-in, and addictive design philosophies.</li>
+</ul>
+<h3 id="phase-3-enterprise-and-nationwide-expansion" tabindex="-1">Phase 3: Enterprise &amp; nationwide expansion <a class="direct-link" href="#phase-3-enterprise-and-nationwide-expansion">#</a></h3>
 <p>The <strong>Intellectual Property (IP)</strong> developed in Phase 1 is used to make Saved a:</p>
 <ul>
 <li>Provider of <strong>enterprise services for new and Saved products</strong> to organisations seeking new ways of working</li>
 <li>Nationwide <strong>franchise opportunity</strong>.</li>
 </ul>
-<h3 id="phase-3-deep-consumer-connection" tabindex="-1">Phase 3: Deep consumer connection <a class="direct-link" href="#phase-3-deep-consumer-connection">#</a></h3>
-<p>Saved is:</p>
-<ul>
-<li>A <strong>resilient diversified brand</strong> in the market for young (15-30, and the young-at-heart) indie creators, artists, developers, environmentalists—the new cyberpunks</li>
-<li>A provider of <strong>certifications and qualifications</strong> in sovereign and resilient technologies</li>
-<li>For people and organisations conscious of their footprint, the cost of living, bigtech lock-in, and addictive design philosophies.</li>
-</ul>
-<p><strong>NOTE:</strong> The order of Phase 2 and Phase 3 could depend on the momentum and nature of the IP developed in Phase 1.</p>
     
     </section>
     <section id="problem-section" class="prop-content">
@@ -292,8 +323,25 @@
     <section id="solution-phase23-section" class="prop-content">
         <h2 id="solution-phase-2-and-phase-3" tabindex="-1">Solution: Phase 2 and Phase 3 <a class="direct-link" href="#solution-phase-2-and-phase-3">#</a></h2>
 <p>The specific detail, timing, and order of Phase 2 and Phase 3 is dependent on the momentum and the nature of the IP developed in Phase 1.</p>
-<h3 id="phase-2-expansion" tabindex="-1">Phase 2: Expansion <a class="direct-link" href="#phase-2-expansion">#</a></h3>
-<p>It is expected that Phase 1 will generate valuable know-how and IP that can be realised commercially through <strong>enterprise services</strong> and <strong>nationwide franchising</strong>.</p>
+<h3 id="phase-2-community-connection" tabindex="-1">Phase 2: Community connection <a class="direct-link" href="#phase-2-community-connection">#</a></h3>
+<p>Done well, Phase 1 will generate brand visibility and ongoing connections, particularly with young adults as the likely widespread recipients of Saved laptops.</p>
+<p>A deep connection to the brand’s values creates the opportunity for <strong>qualification pathways</strong> and a <strong>hybrid retail presence</strong>.</p>
+<h4 id="qualification-pathways" tabindex="-1">Qualification pathways <a class="direct-link" href="#qualification-pathways">#</a></h4>
+<p>Saved develops and provides <strong>qualifications</strong> in sovereign and resilient technologies; these would be:</p>
+<ul>
+<li>Accredited through partnering vocational tertiary providers and open source foundations</li>
+<li>Delivered with a studio model, with a mobile studio to reach remote areas an option</li>
+<li>Hubbed from a dedicated learning space, ready for a hybrid retail presence.</li>
+</ul>
+<h4 id="hybrid-retail-presence" tabindex="-1">Hybrid retail presence <a class="direct-link" href="#hybrid-retail-presence">#</a></h4>
+<p><strong>The brand is positioned to diversify</strong> into a mix of first-party, related-party, and third-party sourced retail products for:</p>
+<ul>
+<li>Young (15-30, and the young-at-heart) indie creators, artists, developers, environmentalists—the new cyberpunks</li>
+<li>People conscious of their footprint, the cost of living, bigtech lock-in, and addictive design philosophies.</li>
+</ul>
+<p>The retail presence is imagined to have a strikingly visual “open kitchen” approach to its Saved laptop process automation, and also serve as a drop-in centre and workshop space.</p>
+<h3 id="phase-3-expansion" tabindex="-1">Phase 3: Expansion <a class="direct-link" href="#phase-3-expansion">#</a></h3>
+<p>It is expected that Phase 1 &amp; 2 will generate valuable know-how and IP that can be realised commercially through <strong>enterprise services</strong> and <strong>nationwide franchising</strong>.</p>
 <h4 id="enterprise-services" tabindex="-1">Enterprise services <a class="direct-link" href="#enterprise-services">#</a></h4>
 <p>Saved enters into support and maintenance agreements with organisations that are seeking new ways of working.</p>
 <p>Through the integration and support of new and Saved products, Saved helps organisations:</p>
@@ -306,24 +354,6 @@
 <h4 id="franchise-opportunity" tabindex="-1">Franchise opportunity <a class="direct-link" href="#franchise-opportunity">#</a></h4>
 <p>Phase 1 will generate the documentation and technological automation processes to enable the “lift and shift” of operations to other regions.</p>
 <p>The know-how and IP would be licensed to franchisees nationwide.</p>
-<h3 id="phase-3-consumer-connection" tabindex="-1">Phase 3: Consumer connection <a class="direct-link" href="#phase-3-consumer-connection">#</a></h3>
-<p>It is anticipated that Phase 1 will generate significant brand visibility and ongoing connections, particularly with young adults as the likely widespread recipients of Saved laptops.</p>
-<p>A deep connection to the brand’s values creates the opportunity for a <strong>hybrid retail presence</strong> and the provision of <strong>certifications and qualifications</strong>.</p>
-<h4 id="hybrid-retail-presence" tabindex="-1">Hybrid retail presence <a class="direct-link" href="#hybrid-retail-presence">#</a></h4>
-<p><strong>The brand is positioned to diversify</strong> into a mix of first-party, related-party, and third-party sourced retail products for:</p>
-<ul>
-<li>Young (15-30, and the young-at-heart) indie creators, artists, developers, environmentalists—the new cyberpunks</li>
-<li>People conscious of their footprint, the cost of living, bigtech lock-in, and addictive design philosophies.</li>
-</ul>
-<p>The founder has previously designed related products that are considered to be a natural fit under a Saved retail umbrella.</p>
-<p>The retail presence is imagined to have a strikingly visual “open kitchen” approach to its Saved laptop process automation, and also serve as a drop-in centre, workshop, and learning space.</p>
-<h4 id="certifications-and-qualifications" tabindex="-1">Certifications and qualifications <a class="direct-link" href="#certifications-and-qualifications">#</a></h4>
-<p>Saved develops and provides <strong>certifications and qualifications</strong> in sovereign and resilient technologies; these would be:</p>
-<ul>
-<li>Accredited through partnering open source foundations and vocational tertiary providers</li>
-<li>Delivered with a hybrid model, a mix of online and face-to-face learning</li>
-<li>Hubbed from the retail presence with a dedicated learning space.</li>
-</ul>
     
     </section>
     <section id="operating-model-section" class="prop-content">
@@ -340,27 +370,27 @@
 <li><strong>Sell Saved laptops</strong> back into the population, initially through channels, for a fair price in the $100 range with a warranty.</li>
 </ol>
 <h3 id="phase-2" tabindex="-1">Phase 2 <a class="direct-link" href="#phase-2">#</a></h3>
-<p>Using IP developed in Phase 1 to:</p>
+<p>Build on brand connection to:</p>
+<ul>
+<li><strong>Deliver qualification pathways</strong> in sovereign and resilient technologies.</li>
+<li><strong>Establish a hybrid retail presence</strong></li>
+</ul>
+<h3 id="phase-3" tabindex="-1">Phase 3 <a class="direct-link" href="#phase-3">#</a></h3>
+<p>Using IP developed in Phase 1 &amp; 2 to:</p>
 <ul>
 <li>Enter into <strong>support and maintenance agreements</strong> with organisations seeking new ways of working through integration of new and Saved products</li>
 <li>License <strong>franchise opportunities</strong> nationwide.</li>
 </ul>
-<h3 id="phase-3" tabindex="-1">Phase 3 <a class="direct-link" href="#phase-3">#</a></h3>
-<p>Build on brand connection to:</p>
-<ul>
-<li><strong>Establish a hybrid retail presence</strong></li>
-<li><strong>Deliver certifications and qualifications</strong> in sovereign and resilient technologies.</li>
-</ul>
-<p><strong>NOTE:</strong> Phase 2 and Phase 3 could swap depending on the response to Phase 1 and the position of the venture.</p>
-<h3 id="private-company-or-social-enterprise" tabindex="-1">Private company or social enterprise <a class="direct-link" href="#private-company-or-social-enterprise">#</a></h3>
-<p>It is yet to be determined whether this venture should be positioned as a simple private company or a social enterprise. The current preference is for it to be <strong>a mission-driven private company</strong> to:</p>
+<h3 id="legal-structure" tabindex="-1">Legal structure <a class="direct-link" href="#legal-structure">#</a></h3>
+<p>The venture preference is to be <strong>a mission-driven private company</strong> to:</p>
 <ul>
 <li>Incentivise long term viability (Windows 10 laptops won’t always need saving)</li>
 <li>Expedite process optimisation</li>
 <li>Drive product and service innovation</li>
 <li>Create commercial IP</li>
+<li>Redirect profits to support training initiatives</li>
 <li>Be in a position to provide warranties, support, and enterprise services</li>
-<li>Attract private capital.</li>
+<li>Attract investment and franchise opportunities</li>
 </ul>
     
     </section>
@@ -416,44 +446,36 @@
 <td style="text-align:left"><em>Bluefin configuration as a general purpose laptop (Saved GP) for novice computer users needing typical office productivity</em></td>
 </tr>
 <tr>
-<td style="text-align:left">Feb-Mar 2026</td>
-<td style="text-align:left">Productionise Saved GP laptop installation and configuration</td>
+<td style="text-align:left"><em>Feb-Mar 2026</em></td>
+<td style="text-align:left"><em>Productionise Saved GP laptop installation and configuration</em></td>
 </tr>
 <tr>
-<td style="text-align:left">Mar 2026</td>
-<td style="text-align:left">Documentation and contractual agreements</td>
+<td style="text-align:left"><em>Apr 2026</em></td>
+<td style="text-align:left"><em>First pilot channel partner established</em></td>
 </tr>
 <tr>
-<td style="text-align:left">Mar 2026</td>
-<td style="text-align:left">First enterprise collection, processing, and upgrade of saved computers</td>
+<td style="text-align:left">Apr-Aug 2026</td>
+<td style="text-align:left">Process documentation</td>
 </tr>
 <tr>
-<td style="text-align:left">Apr 2026</td>
-<td style="text-align:left">First channel partner established</td>
+<td style="text-align:left">Aug 2026</td>
+<td style="text-align:left">Second enterprise collection, processing, and upgrade of saved computers</td>
 </tr>
 <tr>
-<td style="text-align:left">Apr 2026</td>
+<td style="text-align:left">Oct 2026</td>
 <td style="text-align:left">Storage and processing centre established</td>
-</tr>
-<tr>
-<td style="text-align:left">Q2-Q4 2026</td>
-<td style="text-align:left">Operationalised end-to-end process from collection to redistributive sale</td>
 </tr>
 <tr>
 <td style="text-align:left">Q2-Q4 2026</td>
 <td style="text-align:left">Adapting builds based on feedback</td>
 </tr>
 <tr>
-<td style="text-align:left">Q3 2026</td>
-<td style="text-align:left">Introduce Zorin for where it is better-suited (e.g. additional low-level OS control is required)</td>
+<td style="text-align:left">Q4 2026</td>
+<td style="text-align:left">Introduce Zorin for where it is better-suited (e.g. Maker Laptops)</td>
 </tr>
 <tr>
-<td style="text-align:left">Q4 2026</td>
+<td style="text-align:left">Q1 2027</td>
 <td style="text-align:left">Introduce <a href="https://omarchy.org/">Omarchy</a>, or an Omarchy-like experience on an immutable OS, for the hardcore resilient developer enthusiast</td>
-</tr>
-<tr>
-<td style="text-align:left">Q4 2026</td>
-<td style="text-align:left">Drop-ins and workshops</td>
 </tr>
 <tr>
 <td style="text-align:left">2027</td>
@@ -471,12 +493,32 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Q1 2027</td>
-<td style="text-align:left">First enterprise support and maintenance agreement signed</td>
+<td style="text-align:left"><em>Jun 2026</em></td>
+<td style="text-align:left"><em>Resilient technologies qualification design</em></td>
 </tr>
 <tr>
-<td style="text-align:left">Q2 2027</td>
-<td style="text-align:left">Test franchise opportunity</td>
+<td style="text-align:left">Jul-Oct 2026</td>
+<td style="text-align:left">Establish education accreditation partner(s)</td>
+</tr>
+<tr>
+<td style="text-align:left">Sep-Nov 2026</td>
+<td style="text-align:left">Establish studio learning space</td>
+</tr>
+<tr>
+<td style="text-align:left">Dec 2026</td>
+<td style="text-align:left">First drop-ins and workshops</td>
+</tr>
+<tr>
+<td style="text-align:left">Q1 2027</td>
+<td style="text-align:left">First qualification accredited</td>
+</tr>
+<tr>
+<td style="text-align:left">Q1 2027</td>
+<td style="text-align:left">First qualification enrolments (micro-credentials)</td>
+</tr>
+<tr>
+<td style="text-align:left">Q4 2027</td>
+<td style="text-align:left">Retail presence representing wider brand values and products</td>
 </tr>
 </tbody>
 </table>
@@ -490,12 +532,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">2028</td>
-<td style="text-align:left">Retail presence representing wider brand values and products</td>
+<td style="text-align:left">Q3 2027</td>
+<td style="text-align:left">Enterprise contractual agreements written</td>
 </tr>
 <tr>
-<td style="text-align:left">2028</td>
-<td style="text-align:left">Begin provision of certifications</td>
+<td style="text-align:left">Q1 2028</td>
+<td style="text-align:left">First enterprise support and maintenance agreement signed</td>
+</tr>
+<tr>
+<td style="text-align:left">Q3 2028</td>
+<td style="text-align:left">Test franchise opportunity</td>
 </tr>
 </tbody>
 </table>
@@ -600,15 +646,15 @@ Source: Gisborne District Council</figcaption>
 <tbody>
 <tr>
 <td style="text-align:left">Tairāwhiti Environment Centre (TEC)</td>
-<td style="text-align:left"><ul><li>Saved is a local partner demonstrating reuse, repurpose, and revival at scale</li><li>Saved supports TEC by solving the challenge of an insurmountable amount of devices coming their way</li></ul></td>
+<td style="text-align:left"><ul><li>Saved can be a local partner demonstrating reuse, repurpose, and revival at scale</li><li>Saved can help TEC manage the insurmountable amount of devices coming their way</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">TechCollect NZ (with Noel Leeming)</td>
-<td style="text-align:left"><ul><li>Saved is a local alternative to the TechCollect NZ scheme, keeping useful laptops in-region</li><li>TechCollect NZ can divert laptops to Saved</li></ul></td>
+<td style="text-align:left"><ul><li>Saved can be a local redirection for the TechCollect NZ scheme, keeping useful laptops in-region</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:left">Recycle A Device (with Tōnui Collab)</td>
-<td style="text-align:left"><ul><li>Saved is a commercial alternative with a primary focus on rescuing and reimagining Windows 10 laptops at-scale through process automation, open systems, product development, warranties, and enterprise services</li></ul></td>
+<td style="text-align:left">Recycle A Device</td>
+<td style="text-align:left"><ul><li>Saved can provide surplus devices to volunteer refurbishment schemes such as Recycle A Device</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -623,11 +669,11 @@ Source: Gisborne District Council</figcaption>
 <tbody>
 <tr>
 <td style="text-align:left">Noel Leeming, Harvey Norman et al</td>
-<td style="text-align:left"><ul><li>Future potential channel partners for Saved laptops, though highly unlikely</li><li>Saved will offer low-cost open laptop alternatives</li></ul></td>
+<td style="text-align:left"><ul><li>Saved will offer low-cost open laptop alternatives for people who cannot reasonably afford to buy new</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Business Applications, Fusion Networks, Mytronics et al</td>
-<td style="text-align:left"><ul><li>Potential future channel partners for Saved, focused on alternative ways of working</li></ul></td>
+<td style="text-align:left"><ul><li>Saved can be a future support partner focused on alternative ways of working</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -642,31 +688,31 @@ Source: Gisborne District Council</figcaption>
 <tbody>
 <tr>
 <td style="text-align:left">Tōnui Collab</td>
-<td style="text-align:left"><ul><li>Saved is a future complementary provider of workshops at secondary school level with a focus on sovereign and resilient technologies</li></ul></td>
+<td style="text-align:left"><ul><li>Saved can be a complementary provider of tertiary qualification pathways in resilient technologies</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Rāngai</td>
-<td style="text-align:left"><ul><li>Saved is a future complementary provider of certifications and qualifications with a focus on sovereign and resilient technologies</li></ul></td>
+<td style="text-align:left"><ul><li>Saved can be a complementary provider of tertiary qualification pathways in resilient technologies</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">TaiTech</td>
-<td style="text-align:left"><ul><li>Saved is a future complementary partner and provider of laptops and workshops with a focus on cost-effective and resilient computing</li></ul></td>
+<td style="text-align:left"><ul><li>Saved can be a complementary partner and provider of laptops and workshops on cost-effective and resilient computing</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Digital Futures Aotearoa, Remojo Tech</td>
-<td style="text-align:left"><ul><li>Saved is a future local collaborator</li></ul></td>
+<td style="text-align:left"><ul><li>Saved can be a local collaborator</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">EIT</td>
-<td style="text-align:left"><ul><li>Future potential delivery partner for qualifications in sovereign and resilient technologies</li><li>Saved is a future regular intern sponsor</li></ul></td>
+<td style="text-align:left"><ul><li>A potential accreditation and delivery partner for qualifications in resilient technologies</li><li>Saved can be a regular intern sponsor</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Te Wānanga o Aotearoa, Tūranga Ararau, and PTEs</td>
-<td style="text-align:left"><ul><li>Saved is a future complementary partner and provider of laptops and workshops with a focus on cost-effective and resilient computing</li></ul></td>
+<td style="text-align:left"><ul><li>Saved can be a complementary partner and provider of laptops and workshops on cost-effective and resilient computing</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Local high schools</td>
-<td style="text-align:left"><ul><li>Saved could become a laptop provider to high schools, though this is not anticipated</li><li>Saved is a future provider of workshops at secondary level with a focus on sovereign and resilient technologies</li></ul></td>
+<td style="text-align:left"><ul><li>Saved could become a laptop provider to high schools, though this is not anticipated outside of alternative education providers</li><li>Saved can be a provider of workshops at secondary level on resilient technologies</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -681,11 +727,11 @@ Source: Gisborne District Council</figcaption>
 <tbody>
 <tr>
 <td style="text-align:left">WINZ</td>
-<td style="text-align:left"><ul><li>Future potential large-scale channel partner for Saved</li></ul></td>
+<td style="text-align:left"><ul><li>Potential large-scale channel partner for Saved</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Moni Ora et al</td>
-<td style="text-align:left"><ul><li>Future potential channel partner for Saved</li></ul></td>
+<td style="text-align:left"><ul><li>Potential channel partner for Saved</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -700,11 +746,11 @@ Source: Gisborne District Council</figcaption>
 <tbody>
 <tr>
 <td style="text-align:left">Gisborne District Council (GDC)</td>
-<td style="text-align:left"><ul><li>Saved is a waste minimisation partner in conjunction with TEC, focused on rescuing and reviving computers</li></ul></td>
+<td style="text-align:left"><ul><li>Saved can be a waste minimisation partner in conjunction with TEC, focused on rescuing and reviving computers</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Trust Tairāwhiti, Rongowhakaata Iwi Trust</td>
-<td style="text-align:left"><ul><li>Saved is a catalyst for sovereign and resilient technology-led economic development</li></ul></td>
+<td style="text-align:left"><ul><li>Saved is a catalyst for resilient technology-led economic development</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -773,14 +819,8 @@ Source: Gisborne District Council</figcaption>
 </tr>
 </tbody>
 </table>
-<h3 id="sabian-coomber-eit-bachelor-of-computing-graduate" tabindex="-1">Sabian Coomber: EIT Bachelor of Computing graduate <a class="direct-link" href="#sabian-coomber-eit-bachelor-of-computing-graduate">#</a></h3>
-<p>Sabian recently completed a final-year internship at EIT where he became familiar with commercial-grade server builds, Zorin installations on 5-10 year old laptops, inventory management, and the early stages of installation scripting and technical process automation.</p>
-<p>Sabian would become an integral part of the Saved team.</p>
-<h3 id="tahi-oneill-aut-student" tabindex="-1">Tahi O’Neill: AUT student <a class="direct-link" href="#tahi-oneill-aut-student">#</a></h3>
-<p>Tahi recently completed secondary school and is heading to AUT in 2026. With a love of open technology and consumer hardware product design from days-gone-by, Tahi spends time at TEC rescuing technology.</p>
-<p>Tahi would like to support the early development and testing of Saved laptops.</p>
 <h3 id="advisory-board" tabindex="-1">Advisory Board <a class="direct-link" href="#advisory-board">#</a></h3>
-<p>To be determined, preferably from the local ecosystem.</p>
+<p>To be determined, from the local ecosystem.</p>
     
     </section>
     <section id="risks-section" class="prop-content">
@@ -818,25 +858,25 @@ Source: Gisborne District Council</figcaption>
 <td style="text-align:left">Cannot maintain enough free cashflow to fund required operations</td>
 <td style="text-align:left">High</td>
 <td style="text-align:left">Critical</td>
-<td style="text-align:left">Seek philanthropic angel investor to support early growth stages, or wind down as a private venture if cannot overcome risk.</td>
+<td style="text-align:left">Seek outside investment or community grants to support early growth stages, or wind down as a private venture if cannot overcome risk.</td>
 </tr>
 <tr>
 <td style="text-align:left">Founder fails to establish a cornerstone partner (such as WINZ) promptly enough</td>
 <td style="text-align:left">Medium</td>
 <td style="text-align:left">Medium</td>
-<td style="text-align:left">Maintain high engagement with potential partners; bring forward retail presence.</td>
+<td style="text-align:left">Maintain high engagement with potential partners; bring forward training initiatives and retail presence.</td>
 </tr>
 <tr>
 <td style="text-align:left">Saved is regarded as a self-centred for-profit competitor in the ecosystem</td>
 <td style="text-align:left">High</td>
 <td style="text-align:left">Medium</td>
-<td style="text-align:left">Be publicly transparent about the make-up of the cost+ pricing to show it is a fair and reasonable model, and the most viable way to save the scale of laptops.</td>
+<td style="text-align:left">Be transparent about the make-up of the cost+ pricing to show it is a fair and reasonable model, the most viable way to save the scale of laptops, with profits redirected to training initiatives.</td>
 </tr>
 <tr>
 <td style="text-align:left">Founder fails to develop working relationships in the ecosystem</td>
 <td style="text-align:left">Medium</td>
 <td style="text-align:left">Medium</td>
-<td style="text-align:left">Be better at getting-to-know the people in the ecosystem; be useful.</td>
+<td style="text-align:left">Be generous and useful.</td>
 </tr>
 <tr>
 <td style="text-align:left">New Zealand’s largest e-waste recycling company Echo or the Recycle A Device initiative scales up to suitably address the Windows 10 problem nationwide</td>
@@ -872,19 +912,19 @@ Source: Gisborne District Council</figcaption>
 <td style="text-align:left">Founder does not have enough available capacity to successfully drive the venture</td>
 <td style="text-align:left">Medium</td>
 <td style="text-align:left">High</td>
-<td style="text-align:left">Seek philanthropic angel investor to free-up more time; look at ways to slow the rate of progress while still saving the laptops; hand over operations to an entity with capacity.</td>
-</tr>
-<tr>
-<td style="text-align:left">Low demand for diversified retail products</td>
-<td style="text-align:left">Medium-Low</td>
-<td style="text-align:left">Medium</td>
-<td style="text-align:left">Continue product development to better meet demand; use other channels (online, more receptive regions); abandon product(s).</td>
+<td style="text-align:left">Seek outside investment or community grants to free-up more time; look at ways to slow the rate of progress while still saving the laptops; hand over operations to an entity with capacity.</td>
 </tr>
 <tr>
 <td style="text-align:left">Low demand for certifications and qualifications focused on sovereign and resilient technologies</td>
 <td style="text-align:left">Medium-Low</td>
 <td style="text-align:left">Medium-Low</td>
 <td style="text-align:left">Market their usefulness vs alternatives.</td>
+</tr>
+<tr>
+<td style="text-align:left">Low demand for diversified retail products</td>
+<td style="text-align:left">Medium-Low</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Continue product development to better meet demand; use other channels (online, more receptive regions); abandon product(s).</td>
 </tr>
 </tbody>
 </table>
@@ -895,13 +935,15 @@ Source: Gisborne District Council</figcaption>
 <ul>
 <li>Introduce the proposed venture to the ecosystem and regional stakeholders to challenge its commercial viability</li>
 <li>Configure different Saved laptop flavours for different tastes and use cases, and host demonstrations to further challenge the viability of the proposed venture</li>
+<li>Complete two additional pilot rollouts</li>
+<li>Lock-in three notable supply partners for end-of-life laptops</li>
 <li>If supported and considered viable by the ecosystem and regional stakeholders:
 <ul>
 <li>Incorporate the venture</li>
-<li>Seek a temporary storage and processing facility, ideally in conjunction with TEC and GDC</li>
 <li>Establish an advisory group</li>
-<li>Seek support from Trust Tairāwhiti to assess technical operationalisation at-scale, and go-to-market plan</li>
-<li>Potentially seek philanthropic angel investor</li>
+<li>Seek a storage and processing facility</li>
+<li>Bring forward coordinated qualification pathways</li>
+<li>Seek outside investment or community funding</li>
 </ul>
 </li>
 </ul>
@@ -932,11 +974,54 @@ Source: Gisborne District Council</figcaption>
         </div>
     </section>
 </main>
+</div>
 
 
+    
+
+    
+<div id="modal-contact" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-contact-title" inert>
+    <div class="modal-content">
+        <button type="button" class="modal-close" aria-label="Close contact form">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M2 2l16 16M18 2L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="modal-scroll">
+            <div class="form-container">
+                <h2 id="modal-contact-title">Believe</h2>
+                <p class="subtitle">Make it happen.</p>
+                <p>Requesting a computer? Requesting a collection? Feeling digitally dependent? Interested in the qualification?</p>
+                <p>Let's meet up &#128077;</p>
+                <form target="_blank" action="https://formsubmit.co/4d455b2d293af18238b5e7251b9f278d" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Email address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-full">
+                        <textarea placeholder="Your message" class="form-control" name="message" rows="8" required></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="Message received through saved.co.nz">
+                    <input type="hidden" name="_next" value="https://saved.co.nz/thanks/">
+                    <button type="submit">Get in touch</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="/js/site-nav.js" defer></script>
     
         <script src="/js/prop.js" defer></script>
     
+
 </body>
 
 </html>

@@ -10,43 +10,68 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-256x256.png">
     <link rel="stylesheet" href="/css/commit-mono/index.css">
     <link rel="stylesheet" href="/css/custom.css">
+    
     <meta name="theme-color" content="#F4F4F4">
-    <!-- SEO basics -->
     <meta name="description" content="">
-    <meta name="keywords" content="Saved, Windows 10, laptops, rescue, Zorin, Linux, cyberpunk, Omarchy, scale, automation, redistribution, digital equity">
+    <meta name="keywords" content="Saved, Windows 10, laptops, rescue, Linux, open source, digital equity, Tairāwhiti">
     <meta name="author" content="Ian Allan">
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="Thanks">
     <meta property="og:description" content="">
     <meta property="og:image" content="https://www.saved.co.nz/images/saved-social-share.jpg">
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Thanks">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.saved.co.nz/images/saved-social-share.jpg">
-
 </head>
 
 <body class="thanks">
+
     <header>
         <div class="logo">
             
                 <a href="/"><img src="/images/logo.png" alt="Saved Logo"></a>
             
-
         </div>
-        <nav>
+        <nav class="site-nav" aria-label="Main navigation">
             <ul>
-                
-                <li class="read-proposal"><a href="/prop">Read proposal</a></li>
-                <li class="read-proposal-mob"><a href="/prop">Proposal</a></li>
-                
-                <li><a href="#believe">Believe</a></li>
+                <li><a href="/products">Computers</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/training">Training</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
             </ul>
         </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
+                <rect width="22" height="2" rx="1" fill="currentColor"/>
+                <rect y="7" width="22" height="2" rx="1" fill="currentColor"/>
+                <rect y="14" width="22" height="2" rx="1" fill="currentColor"/>
+            </svg>
+        </button>
     </header>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav-header">
+            <a href="/"><img src="/images/logo.png" alt="Saved" class="mobile-nav-logo"></a>
+            <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M2 2l16 16M18 2L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav-links" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="/products">Computers</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/training">Training</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
     
 <main>
     <section id="thanks">
@@ -65,17 +90,85 @@
         <p>&nbsp;</p>
         <p><strong>You can close this tab now.</strong></p>
     </div>
-    </section> 
+    </section>
 </main>
-<footer>
-        <div class="copyright">
-            <p>© 2025 <a href="https://ianallannz.github.io">Ian Allan</a>. License: CC BY-SA 4.0.</<p>
-        </div>
-</footer>
 
+    
+    <footer>
+        <div class="footer-inner">
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li>
+                        <a href="/about">About</a>
+                        <ul>
+                            <li><a href="/prop">Founding proposal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/products">Computers</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li>
+                        <a href="/training">Training</a>
+                        <ul>
+                            <li><a href="/diploma">Proposed diploma</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-brand">
+                <a href="/"><img src="/images/logo.png" alt="Saved Logo" class="footer-logo"></a>
+                <p class="footer-tagline">Believe <em>IT</em> can be saved, and <em>WE</em> can be saved.</p>
+                <div class="copyright">
+                    <p>© 2026 <a href="https://ianallannz.github.io">Ian Allan</a>.<br>All rights reserved unless specified otherwise.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    
+<div id="modal-contact" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-contact-title" inert>
+    <div class="modal-content">
+        <button type="button" class="modal-close" aria-label="Close contact form">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M2 2l16 16M18 2L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="modal-scroll">
+            <div class="form-container">
+                <h2 id="modal-contact-title">Believe</h2>
+                <p class="subtitle">Make it happen.</p>
+                <p>Requesting a computer? Requesting a collection? Feeling digitally dependent? Interested in the qualification?</p>
+                <p>Let's meet up &#128077;</p>
+                <form target="_blank" action="https://formsubmit.co/4d455b2d293af18238b5e7251b9f278d" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Email address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-full">
+                        <textarea placeholder="Your message" class="form-control" name="message" rows="8" required></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="Message received through saved.co.nz">
+                    <input type="hidden" name="_next" value="https://saved.co.nz/thanks/">
+                    <button type="submit">Get in touch</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="/js/site-nav.js" defer></script>
     
         <script src="/js/custom.js" defer></script>
     
+
 </body>
 
 </html>

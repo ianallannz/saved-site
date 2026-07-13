@@ -1,0 +1,36 @@
+{# _includes/modal-contact.njk #}
+<div id="modal-contact" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-contact-title" inert>
+    <div class="modal-content">
+        <button type="button" class="modal-close" aria-label="Close contact form">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M2 2l16 16M18 2L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="modal-scroll">
+            <div class="form-container">
+                <h2 id="modal-contact-title">Believe</h2>
+                <p class="subtitle">Make it happen.</p>
+                <p>Requesting a computer? Requesting a collection? Feeling digitally dependent? Interested in the qualification?</p>
+                <p>Let's meet up &#128077;</p>
+                <form target="_blank" action="https://formsubmit.co/4d455b2d293af18238b5e7251b9f278d" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Email address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-full">
+                        <textarea placeholder="Your message" class="form-control" name="message" rows="8" required></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="Message received through saved.co.nz">
+                    <input type="hidden" name="_next" value="https://saved.co.nz/thanks/">
+                    <button type="submit">Get in touch</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

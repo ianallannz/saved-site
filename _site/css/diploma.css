@@ -1,0 +1,1360 @@
+/* ============================================================
+   DIPLOMA PAGE — diploma CSS scoped under body.diploma
+   All selectors prefixed so nothing leaks to other pages.
+   ============================================================ */
+
+/* ── Custom properties & base body styles ── */
+body.diploma {
+  --bg:               #FCFCFC;
+  --bg-sidebar:       #FAFAFA;
+  --bg-card:          #FFFFFF;
+  --text:             #111111;
+  --text-muted:       #333333;
+  --text-mutedmore:   #666666;
+  --accent:           #000000;
+  --accent-light:     #F5F5F5;
+  --highlight:        rgba(223, 255, 0, 0.5);
+  --accent-nav:       #1100FF;
+  --accent-nav-light: rgba(17, 0, 255, 0.08);
+  --border:           #E2E2E2;
+  --border-mid:       #BFBFBF;
+  --font-sans:        'Inter', sans-serif;
+  --font-mono:        'Commit Mono', monospace;
+  --sidebar-w:        272px;
+  --content-w:        780px;
+  --radius:           6px;
+  --radius-lg:        10px;
+  --ease:             200ms ease;
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+/* Reset Saved's global anchor rule within the diploma layout */
+body.diploma .layout a {
+  font-family: inherit;
+  margin-bottom: 0;
+}
+
+/* ── Layout ── */
+body.diploma .layout {
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+  max-width: 1440px;
+  margin-inline: auto;
+  border: 1px dashed rgba(17,0,255,0.1);
+  border-radius: 0 80px 0 0;
+}
+
+body.diploma .main {
+  flex: 1;
+}
+
+body.diploma .content {
+  max-width: var(--content-w);
+  padding: 3.5rem 3.5rem 6rem;
+}
+
+/* ── Sidebar ── */
+body.diploma .sidebar {
+  width: var(--sidebar-w);
+  position: sticky;
+  top: 56px; /* offset for Saved sticky header */
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+body.diploma .sidebar::-webkit-scrollbar { width: 4px; }
+body.diploma .sidebar::-webkit-scrollbar-track { background: transparent; }
+body.diploma .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+body.diploma .nav-brand {
+  padding: 1.5rem 1.25rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+body.diploma .nav-brand-level {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+body.diploma .nav-brand-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+body.diploma .nav-brand-bar {
+  width: 36px;
+  height: 2px;
+  background: var(--accent);
+  margin: 0.625rem 0;
+}
+
+body.diploma .nav-brand-meta {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+body.diploma .nav-brand-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+body.diploma .nav-brand-head .nav-brand-level {
+  margin-bottom: 0;
+}
+
+body.diploma .sidebar-close {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 0.3rem;
+  border-radius: var(--radius);
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color var(--ease), background var(--ease);
+}
+
+body.diploma .sidebar-close:hover {
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.07);
+}
+
+/* ── Sidebar nav ── */
+body.diploma .nav {
+  padding: 0.75rem 0 1.5rem;
+  flex: 1;
+}
+
+body.diploma .nav-group-label {
+  font-family: var(--font-mono);
+  font-size: 0.575rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 1.25rem 1.25rem 0.4rem;
+  display: block;
+}
+
+body.diploma .nav-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0.75rem 1.25rem;
+}
+
+body.diploma .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.425rem 1.25rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: color var(--ease), border-color var(--ease), background var(--ease);
+  line-height: 1.4;
+}
+
+body.diploma .nav-link:hover {
+  color: var(--text);
+  background: rgba(42, 42, 42, 0.04);
+}
+
+body.diploma .nav-link.active {
+  color: var(--accent-nav);
+  border-left-color: var(--accent-nav);
+  background: var(--accent-nav-light);
+  font-weight: 500;
+}
+
+body.diploma .nav-link--paper {
+  padding-left: 1.5rem;
+  font-size: 0.775rem;
+}
+
+body.diploma .nav-code {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: var(--accent-nav);
+  background: var(--accent-nav-light);
+  padding: 0.15em 0.45em;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+  transition: background var(--ease);
+}
+
+body.diploma .nav-link.active .nav-code {
+  background: rgba(17, 0, 255, 0.15);
+}
+
+/* ── Mobile bar ── */
+body.diploma .mobile-bar {
+  display: none;
+  background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border);
+  padding: 0 1rem;
+  align-items: center;
+}
+
+body.diploma .mobile-bar-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+body.diploma .mobile-menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+  transition: color var(--ease), border-color var(--ease);
+}
+
+body.diploma .mobile-menu-btn:hover {
+  color: var(--text);
+  border-color: var(--border-mid);
+}
+
+body.diploma .sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(42, 42, 42, 0.35);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--ease);
+}
+
+body.diploma .sidebar-overlay.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Section base ── */
+body.diploma .section {
+  padding: 3.5rem 0;
+  /* border-bottom: 1px solid var(--border); */
+  scroll-margin-top: 1.5rem;
+}
+
+body.diploma .section:last-child {
+  border-bottom: none;
+}
+
+body.diploma .section-eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+body.diploma .section-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+body.diploma .section--hero .section-title {
+  font-size: 2.25rem;
+}
+
+body.diploma .section p.section-lead {
+  font-size: 1.1875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 58ch;
+  margin-bottom: 2rem;
+}
+
+body.diploma .section-subhead {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+body.diploma .preamble-col .section-subhead:first-child,
+body.diploma .preamble-remaining .section-subhead:first-child {
+  margin-top: 0;
+}
+
+body.diploma .section p + p,
+body.diploma .section ol + p {
+  margin-top: 1.75rem;
+}
+
+body.diploma .section p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6rem;
+  max-width: 65ch;
+}
+
+body.diploma .highlight {
+  background-color: var(--highlight);
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  color: var(--text);
+}
+/* ── Stats / delivery grids ── */
+body.diploma .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin: 1.75rem 0 2rem;
+}
+
+body.diploma .stat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.125rem;
+}
+
+body.diploma .stat-value {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  letter-spacing: -0.02em;
+}
+
+body.diploma .stat-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+body.diploma .stat-note {
+  font-size: 0.8rem;
+  display: block;
+  padding-bottom: 1.5rem;
+  padding-left: 1em;
+  line-height: 1.1;
+  color: var(--text-mutedmore);
+  position: relative;
+}
+
+body.diploma .stat-note::before {
+  content: '*';
+  position: absolute;
+  left: 0;
+}
+
+body.diploma .delivery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.625rem;
+  margin-top: 1.75rem;
+}
+
+body.diploma .delivery-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.875rem 1rem;
+}
+
+body.diploma .delivery-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+body.diploma .delivery-value {
+  font-size: 0.875rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* ── Design principles ── */
+body.diploma p.principles-note {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 0.875rem 1rem;
+  border-left: 2px solid var(--border-mid);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  max-width: 100ch;
+}
+
+body.diploma .principles-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+body.diploma .principle {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 0;
+  padding: 1.125rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+body.diploma .principle:last-child {
+  border-bottom: none;
+}
+
+body.diploma .principle-num {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  font-weight: 500;
+  padding-top: 0.15rem;
+  letter-spacing: 0.04em;
+}
+
+body.diploma .principle-body strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+body.diploma .principle-body p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75rem;
+  max-width: 58ch;
+}
+
+/* ── Principles grid (inside preamble-remaining only) ── */
+body.diploma .preamble-remaining .principles-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 1.5rem;
+  border-top: 1px dashed rgba(17,0,255,0.1);
+}
+
+body.diploma .preamble-remaining .principle {
+  display: block;
+  padding: 2rem 1.75rem;
+  border-bottom: 1px dashed rgba(17,0,255,0.1);
+  border-left: 1px dashed rgba(17,0,255,0.1);
+  border-top: none;
+  perspective: 1200px;
+}
+
+body.diploma .preamble-remaining .principle:nth-child(3n+1) {
+  border-left: none;
+  padding-left: 0;
+}
+
+body.diploma .preamble-remaining .principle:nth-child(n+4) {
+  border-bottom: none;
+}
+
+body.diploma .preamble-remaining .principle-card {
+  display: grid;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body.diploma .preamble-remaining .principle-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+body.diploma .preamble-remaining .principle-front,
+body.diploma .preamble-remaining .principle-back {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body.diploma .preamble-remaining .principle-back {
+  transform: rotateY(180deg);
+}
+
+body.diploma .preamble-remaining .principle-num {
+  font-family: var(--font-mono);
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: rgba(17,0,255,0.08);
+  letter-spacing: -0.06em;
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+body.diploma .preamble-remaining .principle-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.35;
+  margin: 0.5rem 0 0;
+}
+
+body.diploma .preamble-remaining .principle-hint {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.575rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-mutedmore);
+}
+
+body.diploma .preamble-remaining .principle-back p {
+  max-width: none;
+  line-height: 1.65rem;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+/* ── Studio / threads ── */
+body.diploma .studio-body {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  max-width: 62ch;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+body.diploma .threads-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+body.diploma .thread {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+body.diploma .thread-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+body.diploma .thread-name {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.875rem;
+  padding-bottom: 0.875rem;
+  border-bottom: 1px solid var(--border);
+}
+
+body.diploma .thread p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75rem;
+}
+
+/* ── Graduate profile ── */
+body.diploma .outcomes-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-top: 0.5rem;
+}
+
+body.diploma .outcome {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1rem;
+  padding: 1.125rem 1.25rem 1.125rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+body.diploma .outcome:last-child {
+  border-bottom: none;
+}
+
+body.diploma .outcome-num {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.25em 0.5em;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-top: 0.15rem;
+  display: inline-block;
+}
+
+body.diploma .outcome-body strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+body.diploma .outcome-body p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75rem;
+  max-width: 60ch;
+}
+
+/* ── Semester header ── */
+body.diploma .semester-header {
+  margin-bottom: 1.75rem;
+}
+
+body.diploma .semester-thread-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--text);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem;
+  margin-top: 1.25rem;
+}
+
+body.diploma .semester-thread-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+body.diploma .semester-thread-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+body.diploma .semester-thread-card p {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ── Paper cards ── */
+body.diploma .papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+body.diploma .paper {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border-mid);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  transition: border-left-color var(--ease), box-shadow var(--ease);
+  scroll-margin-top: 1.5rem;
+}
+
+body.diploma .paper:hover,
+body.diploma .paper.is-open {
+  border-left-color: var(--text);
+  box-shadow: 0 2px 12px rgba(42, 42, 42, 0.06);
+}
+
+body.diploma .paper--capstone {
+  border-left-color: var(--accent) !important;
+}
+
+body.diploma .paper-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.875rem;
+  align-items: center;
+  padding: 1.125rem 1.25rem;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  text-align: left;
+  transition: background var(--ease);
+}
+
+body.diploma .paper-header:hover {
+  background: rgba(42, 42, 42, 0.02);
+}
+
+body.diploma .paper-code {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.25em 0.55em;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+  align-self: start;
+  margin-top: 0.1rem;
+}
+
+body.diploma .paper-info {
+  min-width: 0;
+}
+
+body.diploma .paper-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 0.2rem;
+  font-family: var(--font-sans);
+}
+
+body.diploma .paper-tags {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  font-family: var(--font-sans);
+}
+
+body.diploma .paper-chevron {
+  color: var(--text-muted);
+  transition: transform var(--ease);
+  flex-shrink: 0;
+}
+
+body.diploma .paper.is-open .paper-chevron {
+  transform: rotate(180deg);
+}
+
+body.diploma .paper-body {
+  border-top: 1px solid var(--border);
+  padding: 1.375rem 1.375rem 1.375rem 1.5rem;
+}
+
+body.diploma .paper-objective {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+  max-width: 62ch;
+  font-family: var(--font-sans);
+}
+
+body.diploma .paper-sub-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+  margin-top: 1.25rem;
+  display: block;
+}
+
+body.diploma .paper-sub-label:first-of-type {
+  margin-top: 0;
+}
+
+body.diploma .outcomes-ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+body.diploma .outcomes-ol li {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7rem;
+  padding-left: 1.375rem;
+  position: relative;
+  font-family: var(--font-sans);
+}
+
+body.diploma .outcomes-ol li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+  top: 0.2em;
+}
+
+body.diploma .topics-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+body.diploma .topics-list li {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.2em 0.65em;
+  line-height: 1.5;
+  font-family: var(--font-sans);
+}
+
+body.diploma .assessment-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+body.diploma .assessment-list li {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7rem;
+  padding-left: 1.375rem;
+  position: relative;
+  font-family: var(--font-sans);
+}
+
+body.diploma .assessment-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.6rem;
+  top: 0.3em;
+}
+
+body.diploma .assessment-list strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ── Preamble ── */
+body.diploma .preamble-section {
+  padding-top: 0;
+}
+
+body.diploma .preamble-body {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 2.75rem 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+body.diploma .preamble-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px dashed rgba(17,0,255,0.1);
+  border-radius: 0 80px 0 0;
+  padding: 3rem 3.5rem;
+  background: var(--bg);
+}
+
+body.diploma .preamble-col {
+  padding: 0 2.25rem;
+  border-left: 1px dashed rgba(17,0,255,0.1);
+}
+
+body.diploma .preamble-col:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+body.diploma .preamble-col:last-child {
+  padding-right: 0;
+}
+
+body.diploma .preamble-remaining {
+  border: 1px dashed rgba(17,0,255,0.1);
+  border-radius: 0 80px 0 0;
+  padding: 3rem 3.5rem;
+  margin-top: 2rem;
+}
+
+body.diploma .preamble-hero {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 4rem 3.5rem 2.5rem;
+}
+
+body.diploma .preamble-hero-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 760px;
+}
+
+body.diploma .preamble-reflect {
+  min-height: 52vh;
+  background-image: url('/images/saved-qual-bg03.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: -160px;
+}
+
+body.diploma .preamble-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.625rem;
+  display: block;
+}
+
+body.diploma .preamble-hero-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+body.diploma .preamble-hero-title-smaller {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+body.diploma .preamble-hero p.preamble-hero-sub {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: var(--font-mono);
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+body.diploma .preamble-cta-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-mutedmore);
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+body.diploma .preamble-hero-cta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+body.diploma .preamble-btn {
+  display: inline-block;
+  padding: 0.55rem 1.5rem;
+  background-color: var(--accent-nav);
+  outline: 1px dashed rgba(14,1,153,0.2);
+  outline-offset: 8px;
+  border-radius: 0 0 16px 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  transition: background-color var(--ease), color var(--ease), outline var(--ease);
+}
+
+body.diploma .preamble-btn:hover {
+  background-color: #65FF12;
+  outline: 1px dashed rgba(21,0,255,0.4);
+  color: #000000;
+}
+
+/* ── Programme map ── */
+body.diploma .map-wrap {
+  margin-top: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+body.diploma .map-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  body.diploma .content {
+    padding: 3rem 2.5rem 5rem;
+  }
+
+  body.diploma .preamble-reflect {
+    min-height: 40vh;
+  }
+
+  body.diploma .preamble-remaining .principles-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  body.diploma .preamble-remaining .principle:nth-child(n+4) {
+    border-bottom: 1px dashed rgba(17,0,255,0.1);
+  }
+
+  body.diploma .preamble-remaining .principle:nth-child(n+5) {
+    border-bottom: none;
+  }
+
+  body.diploma .preamble-remaining .principle:nth-child(2n+1) {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  body.diploma .preamble-remaining .principle:nth-child(2n) {
+    border-left: 1px dashed rgba(17,0,255,0.1);
+    padding-left: 1.75rem;
+  }
+
+  body.diploma .preamble-remaining .principle-num {
+    font-size: 3.5rem;
+  }
+
+  body.diploma .preamble-remaining .principle-card {
+    min-height: 160px;
+  }
+
+  body.diploma .preamble-body {
+    padding: 2.5rem 0 0;
+  }
+
+  body.diploma .preamble-columns {
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0 40px 0 0;
+    padding: 2.5rem 2.5rem;
+  }
+
+  body.diploma .preamble-col:nth-child(2) {
+    border-left: 1px dashed rgba(17,0,255,0.1);
+  }
+
+  body.diploma .preamble-col:nth-child(3) {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 1px dashed rgba(17,0,255,0.1);
+    padding: 1.75rem 0 0;
+    margin-top: 1.75rem;
+  }
+
+  body.diploma .preamble-remaining {
+    border-radius: 0 40px 0 0;
+    padding: 2.5rem 2.5rem;
+  }
+
+  body.diploma .threads-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.diploma .delivery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* The global html { overflow-x: hidden } already clips the off-canvas
+     sidebar's horizontal overflow; an extra overflow-x: hidden here on body
+     used to turn it into its own scroll container, which breaks
+     position: sticky for its descendants (the header, and the sticky
+     mobile bar below) in most browsers — so it's intentionally omitted. */
+  body.diploma header {
+    position: static;
+  }
+
+  body.diploma .layout {
+    display: block;
+  }
+
+  /* On mobile the sidebar becomes a full-screen overlay, covering the Saved header */
+  body.diploma .sidebar {
+    position: fixed;
+    width: 100vw;
+    border-right: none;
+    top: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 200;
+  }
+
+  body.diploma .sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  body.diploma .sidebar-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body.diploma .sidebar-overlay {
+    display: block;
+    z-index: 190;
+  }
+
+  body.diploma .main {
+    width: 100%;
+  }
+
+  /* Mobile nav bar scrolls with the page until it reaches the top, then sticks there */
+  body.diploma .mobile-bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.875rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    z-index: 150;
+  }
+
+  body.diploma .content {
+    padding: 2rem 1.25rem 4rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  body.diploma .nav-link {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  body.diploma .nav-link--paper {
+    padding-left: 2rem;
+  }
+
+  body.diploma .nav-group-label {
+    padding: 1.5rem 1.5rem 0.5rem;
+  }
+
+  body.diploma .nav-brand {
+    padding: 1.5rem 1.5rem 1.25rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--bg-sidebar);
+  }
+
+  body.diploma .preamble-section {
+    padding-top: 0;
+  }
+
+  body.diploma .preamble-hero {
+    padding: 3rem 1.25rem 2rem;
+  }
+
+  body.diploma .preamble-reflect {
+    min-height: 35vh;
+    margin-bottom: -120px;
+  }
+
+  body.diploma .preamble-body {
+    padding: 2rem 0 0;
+  }
+
+  body.diploma .preamble-columns {
+    grid-template-columns: 1fr;
+    border-radius: 0 24px 0 0;
+    padding: 2rem 1.25rem;
+  }
+
+  body.diploma .preamble-col {
+    border-left: none;
+    border-top: 1px dashed rgba(17,0,255,0.1);
+    padding: 1.5rem 0 0;
+    margin-top: 1.5rem;
+  }
+
+  body.diploma .preamble-col:first-child {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  body.diploma .preamble-remaining {
+    border-radius: 0 24px 0 0;
+    padding: 2rem 1.25rem;
+  }
+
+  body.diploma .preamble-remaining .principles-list {
+    grid-template-columns: 1fr;
+  }
+
+  body.diploma .preamble-remaining .principle,
+  body.diploma .preamble-remaining .principle:nth-child(3n+1),
+  body.diploma .preamble-remaining .principle:nth-child(2n+1),
+  body.diploma .preamble-remaining .principle:nth-child(2n) {
+    border-left: none;
+    border-bottom: 1px dashed rgba(17,0,255,0.1);
+    padding-left: 0;
+  }
+
+  body.diploma .preamble-remaining .principle:last-child {
+    border-bottom: none;
+  }
+
+  body.diploma .preamble-remaining .principle-num {
+    font-size: 3rem;
+  }
+
+  body.diploma .preamble-remaining .principle-card {
+    min-height: 140px;
+  }
+
+  body.diploma .preamble-hero-title {
+    font-size: 2.25rem;
+  }
+
+  body.diploma .preamble-hero p.preamble-hero-sub {
+    font-size: 0.8125rem;
+  }
+
+  body.diploma .section-title {
+    font-size: 1.5rem;
+  }
+
+  body.diploma .section--hero .section-title {
+    font-size: 1.75rem;
+  }
+
+  body.diploma .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  body.diploma .mobile-bar {
+    height: 48px;
+  }
+
+  body.diploma .content {
+    padding: 1.5rem 1rem 4rem;
+  }
+
+  body.diploma .preamble-section {
+    padding-top: 0;
+  }
+
+  body.diploma .preamble-hero {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  body.diploma .preamble-reflect {
+    min-height: 30vh;
+    margin-bottom: -100px;
+  }
+
+  body.diploma .preamble-body {
+    padding: 1.5rem 0 0;
+  }
+
+  body.diploma .preamble-columns,
+  body.diploma .preamble-remaining {
+    padding: 1.5rem 1rem;
+  }
+
+  body.diploma .preamble-hero-title {
+    font-size: 1.75rem;
+  }
+
+  body.diploma .preamble-hero p.preamble-hero-sub {
+    font-size: 1rem;
+  }
+
+  body.diploma .section-title {
+    font-size: 1.375rem;
+  }
+
+  body.diploma .section--hero .section-title {
+    font-size: 1.5rem;
+  }
+
+  body.diploma .outcome {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  body.diploma .principle {
+    grid-template-columns: 2.25rem 1fr;
+  }
+
+  body.diploma .paper-header {
+    gap: 0.625rem;
+    padding: 1rem;
+  }
+}

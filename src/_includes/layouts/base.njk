@@ -10,52 +10,118 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-256x256.png">
     <link rel="stylesheet" href="/css/commit-mono/index.css">
     <link rel="stylesheet" href="/css/custom.css">
+    {% if page.fileSlug == "diploma" %}
+    <link rel="stylesheet" href="/css/diploma.css">
+    {% endif %}
     <meta name="theme-color" content="#F4F4F4">
-    <!-- SEO basics -->
     <meta name="description" content="{{ excerpt }}">
-    <meta name="keywords" content="Saved, Windows 10, laptops, rescue, Zorin, Linux, cyberpunk, Omarchy, scale, automation, redistribution, digital equity">
+    <meta name="keywords" content="Saved, Windows 10, laptops, rescue, Linux, open source, digital equity, Tairāwhiti">
     <meta name="author" content="Ian Allan">
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ excerpt }}">
     <meta property="og:image" content="https://www.saved.co.nz/images/saved-social-share.jpg">
     <meta property="og:url" content="{{ url }}">
     <meta property="og:type" content="website">
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title }}">
     <meta name="twitter:description" content="{{ excerpt }}">
     <meta name="twitter:image" content="https://www.saved.co.nz/images/saved-social-share.jpg">
-
 </head>
 
 <body class="{{ page.fileSlug }}">
+
     <header>
         <div class="logo">
-            {% if page.fileSlug == "prop" or page.fileSlug == "thanks" %}
+            {% if page.url != "/" %}
                 <a href="/"><img src="/images/logo.png" alt="Saved Logo"></a>
             {% else %}
-                <img src="/images/logo.png" alt="Saved Logo">            
+                <img src="/images/logo.png" alt="Saved Logo">
             {% endif %}
-
         </div>
-        <nav>
+        <nav class="site-nav" aria-label="Main navigation">
             <ul>
-                {% if page.fileSlug != "prop" %}
-                <li class="read-proposal"><a href="/prop">Read proposal</a></li>
-                <li class="read-proposal-mob"><a href="/prop">Proposal</a></li>
-                {% endif %}
-                <li><a href="#believe">Believe</a></li>
+                <li><a href="/products"{% if "/products" in page.url %} class="active"{% endif %}>Computers</a></li>
+                <li><a href="/services"{% if "/services" in page.url %} class="active"{% endif %}>Services</a></li>
+                <li><a href="/training"{% if "/training" in page.url %} class="active"{% endif %}>Training</a></li>
+                <li><a href="/about"{% if "/about" in page.url %} class="active"{% endif %}>About</a></li>
+                <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
             </ul>
         </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
+                <rect width="22" height="2" rx="1" fill="currentColor"/>
+                <rect y="7" width="22" height="2" rx="1" fill="currentColor"/>
+                <rect y="14" width="22" height="2" rx="1" fill="currentColor"/>
+            </svg>
+        </button>
     </header>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav-header">
+            <a href="/"><img src="/images/logo.png" alt="Saved" class="mobile-nav-logo"></a>
+            <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M2 2l16 16M18 2L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav-links" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="/products">Computers</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/training">Training</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
     {{ content | safe }}
 
+    {% if page.fileSlug != "prop" %}
+    <footer>
+        <div class="footer-inner">
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li>
+                        <a href="/about">About</a>
+                        <ul>
+                            <li><a href="/prop">Founding proposal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/products">Computers</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li>
+                        <a href="/training">Training</a>
+                        <ul>
+                            <li><a href="/diploma">Proposed diploma</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-brand">
+                <a href="/"><img src="/images/logo.png" alt="Saved Logo" class="footer-logo"></a>
+                <p class="footer-tagline">Believe <em>IT</em> can be saved, and <em>WE</em> can be saved.</p>
+                <div class="copyright">
+                    <p>© 2026 <a href="https://ianallannz.github.io">Ian Allan</a>.<br>All rights reserved unless specified otherwise.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endif %}
+
+    {% include "modal-contact.njk" %}
+
+    <script src="/js/site-nav.js" defer></script>
     {% if page.fileSlug == "prop" %}
         <script src="/js/prop.js" defer></script>
+    {% elif page.fileSlug == "diploma" %}
+        <script src="/js/diploma-nav.js" defer></script>
     {% else %}
         <script src="/js/custom.js" defer></script>
     {% endif %}
+
 </body>
 
 </html>

@@ -10,27 +10,26 @@
 
 ### Phase 2
 
-Using IP developed in Phase 1 to:
+Build on brand connection to:
+
+- **Deliver qualification pathways** in sovereign and resilient technologies.
+- **Establish a hybrid retail presence**
+
+### Phase 3
+
+Using IP developed in Phase 1 &amp; 2 to:
 
 - Enter into **support and maintenance agreements** with organisations seeking new ways of working through integration of new and Saved products
 - License **franchise opportunities** nationwide.
 
-### Phase 3
+### Legal structure
 
-Build on brand connection to:
-
-- **Establish a hybrid retail presence**
-- **Deliver certifications and qualifications** in sovereign and resilient technologies.
-
-**NOTE:** Phase 2 and Phase 3 could swap depending on the response to Phase 1 and the position of the venture.
-
-### Private company or social enterprise
-
-It is yet to be determined whether this venture should be positioned as a simple private company or a social enterprise. The current preference is for it to be **a mission-driven private company** to:
+The venture preference is to be **a mission-driven private company** to:
 
 - Incentivise long term viability (Windows 10 laptops won’t always need saving)
 - Expedite process optimisation
 - Drive product and service innovation
 - Create commercial IP
+- Redirect profits to support training initiatives
 - Be in a position to provide warranties, support, and enterprise services
-- Attract private capital.
+- Attract investment and franchise opportunities
