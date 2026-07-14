@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/css/custom.css">
     {% if page.fileSlug == "diploma" %}
     <link rel="stylesheet" href="/css/diploma.css">
+    {% elif page.fileSlug == "diploma-pitch" %}
+    <link rel="stylesheet" href="/css/diploma-pitch.css">
     {% endif %}
     <meta name="theme-color" content="#F4F4F4">
     <meta name="description" content="{{ excerpt }}">
@@ -78,7 +80,7 @@
 
     {{ content | safe }}
 
-    {% if page.fileSlug != "prop" %}
+    {% if page.fileSlug != "prop" and page.fileSlug != "diploma-pitch" %}
     <footer>
         <div class="footer-inner">
             <nav class="footer-nav" aria-label="Footer navigation">
@@ -118,6 +120,8 @@
         <script src="/js/prop.js" defer></script>
     {% elif page.fileSlug == "diploma" %}
         <script src="/js/diploma-nav.js" defer></script>
+    {% elif page.fileSlug == "diploma-pitch" %}
+        <script src="/js/diploma-pitch.js" defer></script>
     {% else %}
         <script src="/js/custom.js" defer></script>
     {% endif %}
