@@ -794,6 +794,23 @@ header nav a:hover {
     cursor: pointer;
 }
 
+.form-container button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.form-status {
+    font-family: "Commit Mono", monospace;
+    font-size: 0.9rem;
+    color: #c11c1c;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+}
+
+.form-status:empty {
+    display: none;
+}
+
 #thanks {
     position: relative;
     /* min-height: 100svh; */
@@ -812,9 +829,18 @@ header nav a:hover {
 
 #thanks .thanks-wrap {
     max-width: 700px;
-    margin: 0 auto;      
-    padding: 2rem;       
-    text-align: left;    
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+}
+
+#thanks .thanks-wrap a {
+    color: #1100FF;
+    text-decoration: underline;
+}
+
+#thanks .thanks-wrap a:hover {
+    text-decoration: none;
 }
 
 

@@ -1,5 +1,7 @@
 const logoRight = document.querySelector('.logo-right');
-const bgEl = logoRight.querySelector('.bg');
+const bgEl = logoRight?.querySelector('.bg');
+
+if (logoRight && bgEl) {
 const images = [
   'images/logo-bg01.jpg',
   'images/logo-bg02.jpg',
@@ -57,12 +59,13 @@ function runCycle() {
 
 // initial delay before first run
 setTimeout(runCycle, 1000);
-
+}
 
 
 document.addEventListener("DOMContentLoaded", () => {
     const a = document.getElementById("screen-a");
     const b = document.getElementById("screen-b");
+    if (!a || !b) return;
 
     const images = [
         "/images/bluefin-windows-10-disaster.jpg",
@@ -99,4 +102,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     setInterval(crossfade, 4000);
+});
+
+// "Go back" link on the thanks page — return to whatever page sent them here.
+// Only intercept when we can confirm they actually arrived from this site;
+// history.length alone isn't reliable (browsers count a fresh tab differently).
+document.addEventListener("DOMContentLoaded", () => {
+    const goBack = document.getElementById("go-back");
+    if (!goBack) return;
+
+    let cameFromSite = false;
+    try {
+        cameFromSite = document.referrer && new URL(document.referrer).origin === window.location.origin;
+    } catch (err) {
+        cameFromSite = false;
+    }
+
+    if (cameFromSite) {
+        goBack.addEventListener("click", e => {
+            e.preventDefault();
+            window.history.back();
+        });
+    }
 });
