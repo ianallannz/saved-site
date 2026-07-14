@@ -1639,6 +1639,12 @@ header nav a.active {
     color: #000 !important;
 }
 
+.cta-group {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
 [data-modal-open] {
     box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
 }
