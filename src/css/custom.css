@@ -263,7 +263,7 @@ header nav a:hover {
     align-items: center;
     padding: 4rem 2rem;
     margin-bottom: -80px;;
-    background-image: url("../images/saved-computers-bg01.jpg");
+    background-image: url("../images/keep-clear.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -2742,7 +2742,7 @@ body.products .preamble-hero-overlay {
 
 body.products .preamble-reflect {
   min-height: 52vh;
-  background-image: url('/images/saved-computers-bg02.jpg');
+  background-image: url('/images/saved-computers-bg01.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3052,7 +3052,7 @@ body.services .preamble-hero-overlay {
 
 body.services .preamble-reflect {
   min-height: 52vh;
-  background-image: url('/images/keep-clear.jpg');
+  background-image: url('/images/saved-computers-bg02.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
