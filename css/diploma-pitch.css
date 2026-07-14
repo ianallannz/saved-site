@@ -1,0 +1,560 @@
+/* ============================================================
+   DIPLOMA PITCH DECK — scoped under body.diploma-pitch
+   Shares the diploma page's design tokens for visual continuity.
+   ============================================================ */
+
+body.diploma-pitch {
+  --bg:               #FCFCFC;
+  --bg-card:          #FFFFFF;
+  --text:             #111111;
+  --text-muted:       #333333;
+  --text-mutedmore:   #666666;
+  --accent:           #000000;
+  --accent-nav:       #1100FF;
+  --accent-nav-light: rgba(17, 0, 255, 0.08);
+  --border:           #E2E2E2;
+  --font-sans:        'Inter', sans-serif;
+  --font-mono:        'Commit Mono', monospace;
+  --radius:           6px;
+  --ease:             200ms ease;
+  height: 100svh;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+body.diploma-pitch .layout a {
+  font-family: inherit;
+  margin-bottom: 0;
+}
+
+/* ── Deck ── */
+body.diploma-pitch .deck {
+  height: calc(100svh - 56px);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  /* No scroll-behavior:smooth here — it would make scrollIntoView's
+     behavior:'auto' (used for instant hash-landing) resolve to smooth
+     per spec. JS explicitly requests 'smooth' for user-driven nav instead. */
+}
+
+body.diploma-pitch .slide {
+  position: relative;
+  min-height: calc(100svh - 56px);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 3.5rem 5rem;
+  border-bottom: 1px dashed rgba(17,0,255,0.12);
+  box-sizing: border-box;
+}
+
+body.diploma-pitch .slide-inner {
+  max-width: 880px;
+  width: 100%;
+}
+
+body.diploma-pitch .slide-num {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  font-family: var(--font-mono);
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: rgba(17,0,255,0.07);
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+/* ── Type ── */
+body.diploma-pitch .eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-nav);
+  margin-bottom: 0.75rem;
+}
+
+/* Plain inline text links within slide content (not the CTA button/quiet-link,
+   which style themselves, and not the site header/footer nav) */
+body.diploma-pitch .slide-inner .eyebrow a,
+body.diploma-pitch .slide-inner p a,
+body.diploma-pitch .slide-inner li a {
+  color: var(--accent-nav);
+  text-decoration: underline;
+}
+
+body.diploma-pitch .slide-inner .eyebrow a:hover,
+body.diploma-pitch .slide-inner p a:hover,
+body.diploma-pitch .slide-inner li a:hover {
+  text-decoration: none;
+}
+
+body.diploma-pitch h1,
+body.diploma-pitch h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+body.diploma-pitch h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+body.diploma-pitch p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+body.diploma-pitch .lead {
+  font-size: 1.25rem;
+  max-width: 640px;
+}
+
+body.diploma-pitch .lead strong {
+  color: var(--text);
+}
+
+/* ── Cover slide ── */
+body.diploma-pitch .slide-cover h1 {
+  font-size: 3.75rem;
+}
+
+body.diploma-pitch .stat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+body.diploma-pitch .stat-strip span {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-mutedmore);
+}
+
+body.diploma-pitch .stat-strip strong {
+  background: none;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+/* ── Multi-column slides (problem / ask) ── */
+body.diploma-pitch .slide-cols {
+  display: grid;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+body.diploma-pitch .slide-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+body.diploma-pitch .slide-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 640px;
+}
+
+body.diploma-pitch .slide-cols p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* ── Stats / delivery grids (shared visual language with diploma.njk) ── */
+body.diploma-pitch .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+body.diploma-pitch .delivery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.625rem;
+  margin-top: 1.75rem;
+}
+
+body.diploma-pitch .stat,
+body.diploma-pitch .delivery-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.125rem;
+}
+
+body.diploma-pitch .stat-value {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  letter-spacing: -0.02em;
+}
+
+body.diploma-pitch .stat-label,
+body.diploma-pitch .delivery-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+body.diploma-pitch .delivery-label {
+  margin-bottom: 0.3rem;
+}
+
+body.diploma-pitch .delivery-value {
+  font-size: 0.875rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* ── Credential list (semester slides) ── */
+body.diploma-pitch .credential-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-top: 1.75rem;
+}
+
+body.diploma-pitch .credential-list > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+body.diploma-pitch .credential-code {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--accent-nav);
+  background: var(--accent-nav-light);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+}
+
+body.diploma-pitch .credential-list strong {
+  display: block;
+  background: none;
+  padding: 0;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+body.diploma-pitch .credential-list p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* ── Outcome list ── */
+body.diploma-pitch .outcome-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2rem;
+  margin: 1.5rem 0;
+  padding: 0;
+  max-width: 760px;
+}
+
+body.diploma-pitch .outcome-list li {
+  position: relative;
+  padding: 0.55rem 0 0.55rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+body.diploma-pitch .outcome-list strong {
+  background: none;
+  padding: 0;
+  color: var(--text);
+}
+
+body.diploma-pitch .outcome-list li::before {
+  content: '\2192';
+  position: absolute;
+  left: 0;
+  color: var(--accent-nav);
+}
+
+/* ── Programme map slide ── */
+body.diploma-pitch .slide-map {
+  align-items: flex-start;
+  padding-top: 2.5rem;
+}
+
+body.diploma-pitch .slide-map .slide-inner {
+  max-width: 1100px;
+}
+
+body.diploma-pitch .slide-map h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+body.diploma-pitch .programme-map {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(100svh - 56px - 12rem);
+  margin: 1.25rem auto 0;
+  object-fit: contain;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* ── Founder slide ── */
+body.diploma-pitch .slide-founder .slide-inner {
+  max-width: 760px;
+}
+
+body.diploma-pitch .founder-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+body.diploma-pitch .founder-photo {
+  width: 160px;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 40px 40px 0 40px;
+}
+
+body.diploma-pitch .founder-layout h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+body.diploma-pitch .founder-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+body.diploma-pitch .founder-links a {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--accent-nav);
+  text-decoration: underline;
+}
+
+body.diploma-pitch .founder-links a:hover {
+  text-decoration: none;
+}
+
+/* ── Ask slide ── */
+body.diploma-pitch .slide-ask-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+body.diploma-pitch .preamble-btn {
+  display: inline-block;
+  padding: 0.65rem 1.75rem;
+  background-color: var(--accent-nav);
+  outline: 1px dashed rgba(14,1,153,0.2);
+  outline-offset: 8px;
+  border-radius: 0 0 16px 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.05rem;
+  transition: background-color var(--ease), color var(--ease), outline var(--ease);
+}
+
+body.diploma-pitch .preamble-btn:hover {
+  background-color: #65FF12;
+  outline: 1px dashed rgba(21,0,255,0.4);
+  color: #000000;
+}
+
+body.diploma-pitch .quiet-link {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--text-mutedmore);
+}
+
+body.diploma-pitch .quiet-link:hover {
+  color: var(--accent-nav);
+  border-bottom-color: var(--accent-nav);
+}
+
+/* ── Deck nav (fixed bottom bar) ── */
+body.diploma-pitch .deck-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background: rgba(252,252,252,0.92);
+  backdrop-filter: blur(4px);
+  border-top: 1px solid var(--border);
+  z-index: 50;
+}
+
+body.diploma-pitch .deck-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color var(--ease), color var(--ease);
+}
+
+body.diploma-pitch .deck-arrow:hover {
+  border-color: var(--accent-nav);
+  color: var(--accent-nav);
+}
+
+body.diploma-pitch .deck-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+body.diploma-pitch .deck-dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: var(--border);
+  cursor: pointer;
+  transition: background var(--ease), transform var(--ease);
+}
+
+body.diploma-pitch .deck-dot.active {
+  background: var(--accent-nav);
+  transform: scale(1.3);
+}
+
+body.diploma-pitch .deck-counter {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-mutedmore);
+  min-width: 3.5rem;
+  text-align: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  body.diploma-pitch .slide {
+    padding: 3rem 1.5rem 5rem;
+  }
+  body.diploma-pitch h1,
+  body.diploma-pitch h2 {
+    font-size: 2.25rem;
+  }
+  body.diploma-pitch .slide-cover h1 {
+    font-size: 2.5rem;
+  }
+  body.diploma-pitch .slide-cols-3 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  body.diploma-pitch .stats-grid,
+  body.diploma-pitch .delivery-grid,
+  body.diploma-pitch .credential-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  body.diploma-pitch .slide-num {
+    font-size: 3rem;
+    top: 1.25rem;
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body.diploma-pitch .stats-grid,
+  body.diploma-pitch .delivery-grid,
+  body.diploma-pitch .credential-list,
+  body.diploma-pitch .outcome-list,
+  body.diploma-pitch .slide-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  body.diploma-pitch .stat-strip {
+    gap: 1.25rem;
+  }
+  body.diploma-pitch .deck-dots {
+    display: none;
+  }
+  body.diploma-pitch .founder-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  body.diploma-pitch .founder-photo {
+    width: 120px;
+  }
+}
+
+/* Keep the site nav out of the way while presenting — logo stays put,
+   nav links/toggle fade in only when the pointer is over the header.
+   Restricted to mouse/trackpad devices: touch has no hover to reveal it. */
+@media (hover: hover) and (pointer: fine) {
+  body.diploma-pitch header .site-nav,
+  body.diploma-pitch header .nav-toggle {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+  }
+
+  body.diploma-pitch header:hover .site-nav,
+  body.diploma-pitch header:focus-within .site-nav,
+  body.diploma-pitch header:hover .nav-toggle,
+  body.diploma-pitch header:focus-within .nav-toggle {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
