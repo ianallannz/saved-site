@@ -1,11 +1,18 @@
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.prop-nav');
+  const navClose = document.querySelector('.prop-nav-close');
 
   // Toggle nav when hamburger is clicked
   hamburger.addEventListener('click', () => {
     const expanded = hamburger.getAttribute('aria-expanded') === 'true';
     hamburger.setAttribute('aria-expanded', !expanded);
     nav.classList.toggle('open');
+  });
+
+  // Close nav when its close button is clicked
+  navClose?.addEventListener('click', () => {
+    nav.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false);
   });
 
   // Close nav when any link inside it is clicked

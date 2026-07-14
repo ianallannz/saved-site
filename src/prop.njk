@@ -4,12 +4,9 @@ title: "Saved: IT can be saved, and WE can be saved."
 excerpt: "Saved is a new venture in Phase 1 of an amitious vision. Phase 1: collect, process, upgrade, reimagine, and redistribute Windows 10 laptops, with warranties."
 ---
 
-<button class="hamburger" aria-controls="prop-nav" aria-expanded="false">
-  ☰
-</button>
-
 <div class="prop-layout">
 <nav id="prop-nav" class="prop-nav">
+  <button class="prop-nav-close" aria-label="Close navigation">✕</button>
   <ul>
     {% mdheadings "prop-parts/cover.md" %}
     {% mdheadings "prop-parts/vision.md" %}
@@ -27,6 +24,11 @@ excerpt: "Saved is a new venture in Phase 1 of an amitious vision. Phase 1: coll
   </ul>
 </nav>
 <main class="proposal">
+    <div class="prop-mobile-bar">
+        <button class="hamburger" aria-controls="prop-nav" aria-expanded="false">
+            ☰ Contents
+        </button>
+    </div>
     <section id="cover-section" class="prop-content">
         {% mdfile "prop-parts/cover.md" %}    
     </section>
