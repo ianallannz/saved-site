@@ -47,8 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
   prevBtn?.addEventListener('click', () => goToSlide(currentIndex - 1));
   nextBtn?.addEventListener('click', () => goToSlide(currentIndex + 1));
 
-  // Keyboard navigation
+  // Keyboard navigation — ignore keystrokes aimed at form fields (e.g. the
+  // contact modal), so typing/arrow-keys/space work normally there instead
+  // of being hijacked to change slides.
   document.addEventListener('keydown', e => {
+    const target = e.target;
+    const isFormField = target instanceof HTMLElement && (
+      target.tagName === 'INPUT' ||
+      target.tagName === 'TEXTAREA' ||
+      target.tagName === 'SELECT' ||
+      target.isContentEditable
+    );
+    if (isFormField) return;
+
     switch (e.key) {
       case 'ArrowDown':
       case 'ArrowRight':
