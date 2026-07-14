@@ -2649,6 +2649,11 @@ body.products .stock-item-label {
   }
   body.products .product-tabs-nav {
     overflow-x: auto;
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* legacy Edge/IE */
+  }
+  body.products .product-tabs-nav::-webkit-scrollbar {
+    display: none;              /* Chrome/Safari */
   }
   body.products .tab-btn {
     white-space: nowrap;
@@ -2667,6 +2672,10 @@ body.products .stock-item-label {
   }
   body.products .stock-item:first-child {
     padding-left: 0;
+  }
+  body.products .spec-list > div {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
   }
 }
 
