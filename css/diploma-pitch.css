@@ -238,6 +238,8 @@ body.diploma-pitch .delivery-value {
 body.diploma-pitch .credential-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
   gap: 1rem 2rem;
   margin-top: 1.75rem;
 }
@@ -523,6 +525,10 @@ body.diploma-pitch .deck-counter {
   body.diploma-pitch .outcome-list,
   body.diploma-pitch .slide-cols-2 {
     grid-template-columns: 1fr;
+  }
+  body.diploma-pitch .credential-list {
+    grid-template-rows: none;
+    grid-auto-flow: row;
   }
   body.diploma-pitch .stat-strip {
     gap: 1.25rem;
