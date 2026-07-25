@@ -2119,7 +2119,7 @@ header nav a[data-modal-open],
 
 
 
-    /* Off-canvas, sliding panel — same mechanic as body.diploma .sidebar */
+    /* Off-canvas, sliding panel — same mechanic as body.qual .sidebar */
     .prop .prop-nav {
         position: fixed;
         top: 0;
