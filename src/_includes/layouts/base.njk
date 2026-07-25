@@ -10,10 +10,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-256x256.png">
     <link rel="stylesheet" href="/css/commit-mono/index.css">
     <link rel="stylesheet" href="/css/custom.css">
-    {% if page.fileSlug == "diploma" %}
-    <link rel="stylesheet" href="/css/diploma.css">
-    {% elif page.fileSlug == "diploma-pitch" %}
-    <link rel="stylesheet" href="/css/diploma-pitch.css">
+    {% if page.fileSlug == "qual" %}
+    <link rel="stylesheet" href="/css/qual.css">
+    {% elif page.fileSlug == "qual-pitch" %}
+    <link rel="stylesheet" href="/css/qual-pitch.css">
     {% endif %}
     <meta name="theme-color" content="#F4F4F4">
     <meta name="description" content="{{ excerpt }}">
@@ -80,7 +80,7 @@
 
     {{ content | safe }}
 
-    {% if page.fileSlug != "prop" and page.fileSlug != "diploma-pitch" %}
+    {% if page.fileSlug != "prop" and page.fileSlug != "qual-pitch" %}
     <footer>
         <div class="footer-inner">
             <nav class="footer-nav" aria-label="Footer navigation">
@@ -96,8 +96,8 @@
                     <li>
                         <a href="/training">Training</a>
                         <ul>
-                            <li><a href="/diploma-pitch">Qualification pitch</a></li>
-                            <li><a href="/diploma">Qualification proposal</a></li>
+                            <li><a href="/qual-pitch">Qualification pitch</a></li>
+                            <li><a href="/qual">Qualification proposal</a></li>
                         </ul>
                     </li>
                     <li><a href="#modal-contact" data-modal-open="modal-contact">Contact</a></li>
@@ -119,10 +119,10 @@
     <script src="/js/site-nav.js" defer></script>
     {% if page.fileSlug == "prop" %}
         <script src="/js/prop.js" defer></script>
-    {% elif page.fileSlug == "diploma" %}
-        <script src="/js/diploma-nav.js" defer></script>
-    {% elif page.fileSlug == "diploma-pitch" %}
-        <script src="/js/diploma-pitch.js" defer></script>
+    {% elif page.fileSlug == "qual" %}
+        <script src="/js/qual-nav.js" defer></script>
+    {% elif page.fileSlug == "qual-pitch" %}
+        <script src="/js/qual-pitch.js" defer></script>
     {% else %}
         <script src="/js/custom.js" defer></script>
     {% endif %}

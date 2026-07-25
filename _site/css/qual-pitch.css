@@ -1,9 +1,9 @@
 /* ============================================================
-   DIPLOMA PITCH DECK — scoped under body.diploma-pitch
-   Shares the diploma page's design tokens for visual continuity.
+   QUAL PITCH DECK — scoped under body.qual-pitch
+   Shares the qual page's design tokens for visual continuity.
    ============================================================ */
 
-body.diploma-pitch {
+body.qual-pitch {
   --bg:               #FCFCFC;
   --bg-card:          #FFFFFF;
   --text:             #111111;
@@ -25,13 +25,13 @@ body.diploma-pitch {
   line-height: 1.5;
 }
 
-body.diploma-pitch .layout a {
+body.qual-pitch .layout a {
   font-family: inherit;
   margin-bottom: 0;
 }
 
 /* ── Deck ── */
-body.diploma-pitch .deck {
+body.qual-pitch .deck {
   height: calc(100svh - 56px);
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -40,7 +40,7 @@ body.diploma-pitch .deck {
      per spec. JS explicitly requests 'smooth' for user-driven nav instead. */
 }
 
-body.diploma-pitch .slide {
+body.qual-pitch .slide {
   position: relative;
   min-height: calc(100svh - 56px);
   scroll-snap-align: start;
@@ -53,12 +53,12 @@ body.diploma-pitch .slide {
   box-sizing: border-box;
 }
 
-body.diploma-pitch .slide-inner {
+body.qual-pitch .slide-inner {
   max-width: 880px;
   width: 100%;
 }
 
-body.diploma-pitch .slide-num {
+body.qual-pitch .slide-num {
   position: absolute;
   top: 2rem;
   right: 2.5rem;
@@ -71,7 +71,7 @@ body.diploma-pitch .slide-num {
 }
 
 /* ── Type ── */
-body.diploma-pitch .eyebrow {
+body.qual-pitch .eyebrow {
   display: block;
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -82,21 +82,21 @@ body.diploma-pitch .eyebrow {
 
 /* Plain inline text links within slide content (not the CTA button/quiet-link,
    which style themselves, and not the site header/footer nav) */
-body.diploma-pitch .slide-inner .eyebrow a,
-body.diploma-pitch .slide-inner p a,
-body.diploma-pitch .slide-inner li a {
+body.qual-pitch .slide-inner .eyebrow a,
+body.qual-pitch .slide-inner p a,
+body.qual-pitch .slide-inner li a {
   color: var(--accent-nav);
   text-decoration: underline;
 }
 
-body.diploma-pitch .slide-inner .eyebrow a:hover,
-body.diploma-pitch .slide-inner p a:hover,
-body.diploma-pitch .slide-inner li a:hover {
+body.qual-pitch .slide-inner .eyebrow a:hover,
+body.qual-pitch .slide-inner p a:hover,
+body.qual-pitch .slide-inner li a:hover {
   text-decoration: none;
 }
 
-body.diploma-pitch h1,
-body.diploma-pitch h2 {
+body.qual-pitch h1,
+body.qual-pitch h2 {
   font-size: 3rem;
   font-weight: 500;
   color: var(--text);
@@ -105,42 +105,42 @@ body.diploma-pitch h2 {
   margin-bottom: 1.25rem;
 }
 
-body.diploma-pitch h3 {
+body.qual-pitch h3 {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 0.4rem;
 }
 
-body.diploma-pitch p {
+body.qual-pitch p {
   font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-body.diploma-pitch .lead {
+body.qual-pitch .lead {
   font-size: 1.25rem;
   max-width: 640px;
 }
 
-body.diploma-pitch .lead strong {
+body.qual-pitch .lead strong {
   color: var(--text);
 }
 
 /* ── Cover slide ── */
-body.diploma-pitch .slide-cover h1 {
+body.qual-pitch .slide-cover h1 {
   font-size: 3.75rem;
 }
 
-body.diploma-pitch .stat-strip {
+body.qual-pitch .stat-strip {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2.5rem;
 }
 
-body.diploma-pitch .stat-strip span {
+body.qual-pitch .stat-strip span {
   display: flex;
   flex-direction: column;
   font-family: var(--font-mono);
@@ -150,7 +150,7 @@ body.diploma-pitch .stat-strip span {
   color: var(--text-mutedmore);
 }
 
-body.diploma-pitch .stat-strip strong {
+body.qual-pitch .stat-strip strong {
   background: none;
   padding: 0;
   font-size: 1.5rem;
@@ -161,43 +161,43 @@ body.diploma-pitch .stat-strip strong {
 }
 
 /* ── Multi-column slides (problem / ask) ── */
-body.diploma-pitch .slide-cols {
+body.qual-pitch .slide-cols {
   display: grid;
   gap: 2.5rem;
   margin-top: 1rem;
 }
 
-body.diploma-pitch .slide-cols-3 {
+body.qual-pitch .slide-cols-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-body.diploma-pitch .slide-cols-2 {
+body.qual-pitch .slide-cols-2 {
   grid-template-columns: repeat(2, 1fr);
   max-width: 640px;
 }
 
-body.diploma-pitch .slide-cols p {
+body.qual-pitch .slide-cols p {
   font-size: 0.95rem;
   margin-bottom: 0;
 }
 
-/* ── Stats / delivery grids (shared visual language with diploma.njk) ── */
-body.diploma-pitch .stats-grid {
+/* ── Stats / delivery grids (shared visual language with qual.njk) ── */
+body.qual-pitch .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
   margin-top: 1.75rem;
 }
 
-body.diploma-pitch .delivery-grid {
+body.qual-pitch .delivery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.625rem;
   margin-top: 1.75rem;
 }
 
-body.diploma-pitch .stat,
-body.diploma-pitch .delivery-item {
+body.qual-pitch .stat,
+body.qual-pitch .delivery-item {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -205,12 +205,12 @@ body.diploma-pitch .delivery-item {
 }
 
 @media (min-width: 769px) {
-  body.diploma-pitch .delivery-item-wide {
+  body.qual-pitch .delivery-item-wide {
     grid-column: span 2;
   }
 }
 
-body.diploma-pitch .stat-value {
+body.qual-pitch .stat-value {
   display: block;
   font-family: var(--font-mono);
   font-size: 1.375rem;
@@ -220,8 +220,8 @@ body.diploma-pitch .stat-value {
   letter-spacing: -0.02em;
 }
 
-body.diploma-pitch .stat-label,
-body.diploma-pitch .delivery-label {
+body.qual-pitch .stat-label,
+body.qual-pitch .delivery-label {
   display: block;
   font-family: var(--font-mono);
   font-size: 0.65rem;
@@ -230,18 +230,18 @@ body.diploma-pitch .delivery-label {
   color: var(--text-muted);
 }
 
-body.diploma-pitch .delivery-label {
+body.qual-pitch .delivery-label {
   margin-bottom: 0.3rem;
 }
 
-body.diploma-pitch .delivery-value {
+body.qual-pitch .delivery-value {
   font-size: 0.875rem;
   color: var(--text);
   line-height: 1.4;
 }
 
 /* ── Credential list (semester slides) ── */
-body.diploma-pitch .credential-list {
+body.qual-pitch .credential-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, auto);
@@ -250,13 +250,13 @@ body.diploma-pitch .credential-list {
   margin-top: 1.75rem;
 }
 
-body.diploma-pitch .credential-list > div {
+body.qual-pitch .credential-list > div {
   display: flex;
   align-items: flex-start;
   gap: 0.9rem;
 }
 
-body.diploma-pitch .credential-code {
+body.qual-pitch .credential-code {
   flex-shrink: 0;
   font-family: var(--font-mono);
   font-size: 0.7rem;
@@ -268,7 +268,7 @@ body.diploma-pitch .credential-code {
   letter-spacing: 0.04em;
 }
 
-body.diploma-pitch .credential-list strong {
+body.qual-pitch .credential-list strong {
   display: block;
   background: none;
   padding: 0;
@@ -277,13 +277,13 @@ body.diploma-pitch .credential-list strong {
   margin-bottom: 0.15rem;
 }
 
-body.diploma-pitch .credential-list p {
+body.qual-pitch .credential-list p {
   font-size: 0.875rem;
   margin-bottom: 0;
 }
 
 /* ── Outcome list ── */
-body.diploma-pitch .outcome-list {
+body.qual-pitch .outcome-list {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -293,7 +293,7 @@ body.diploma-pitch .outcome-list {
   max-width: 760px;
 }
 
-body.diploma-pitch .outcome-list li {
+body.qual-pitch .outcome-list li {
   position: relative;
   padding: 0.55rem 0 0.55rem 1.5rem;
   border-bottom: 1px solid var(--border);
@@ -301,13 +301,13 @@ body.diploma-pitch .outcome-list li {
   color: var(--text-muted);
 }
 
-body.diploma-pitch .outcome-list strong {
+body.qual-pitch .outcome-list strong {
   background: none;
   padding: 0;
   color: var(--text);
 }
 
-body.diploma-pitch .outcome-list li::before {
+body.qual-pitch .outcome-list li::before {
   content: '\2192';
   position: absolute;
   left: 0;
@@ -315,21 +315,21 @@ body.diploma-pitch .outcome-list li::before {
 }
 
 /* ── Programme map slide ── */
-body.diploma-pitch .slide-map {
+body.qual-pitch .slide-map {
   align-items: flex-start;
   padding-top: 2.5rem;
 }
 
-body.diploma-pitch .slide-map .slide-inner {
+body.qual-pitch .slide-map .slide-inner {
   max-width: 1100px;
 }
 
-body.diploma-pitch .slide-map h2 {
+body.qual-pitch .slide-map h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-body.diploma-pitch .programme-map {
+body.qual-pitch .programme-map {
   display: block;
   width: auto;
   max-width: 100%;
@@ -345,48 +345,48 @@ body.diploma-pitch .programme-map {
 }
 
 /* ── Founder slide ── */
-body.diploma-pitch .slide-founder .slide-inner {
+body.qual-pitch .slide-founder .slide-inner {
   max-width: 760px;
 }
 
-body.diploma-pitch .founder-layout {
+body.qual-pitch .founder-layout {
   display: flex;
   align-items: flex-start;
   gap: 2.5rem;
   margin-top: 1rem;
 }
 
-body.diploma-pitch .founder-photo {
+body.qual-pitch .founder-photo {
   width: 160px;
   flex-shrink: 0;
   display: block;
   border-radius: 40px 40px 0 40px;
 }
 
-body.diploma-pitch .founder-layout h2 {
+body.qual-pitch .founder-layout h2 {
   font-size: 2rem;
   margin-bottom: 0.75rem;
 }
 
-body.diploma-pitch .founder-links {
+body.qual-pitch .founder-links {
   display: flex;
   gap: 1.5rem;
   margin-top: 0.5rem;
 }
 
-body.diploma-pitch .founder-links a {
+body.qual-pitch .founder-links a {
   font-family: var(--font-mono);
   font-size: 0.9rem;
   color: var(--accent-nav);
   text-decoration: underline;
 }
 
-body.diploma-pitch .founder-links a:hover {
+body.qual-pitch .founder-links a:hover {
   text-decoration: none;
 }
 
 /* ── Ask slide ── */
-body.diploma-pitch .slide-ask-cta {
+body.qual-pitch .slide-ask-cta {
   display: flex;
   align-items: center;
   gap: 1.75rem;
@@ -394,7 +394,7 @@ body.diploma-pitch .slide-ask-cta {
   flex-wrap: wrap;
 }
 
-body.diploma-pitch .preamble-btn {
+body.qual-pitch .preamble-btn {
   display: inline-block;
   padding: 0.65rem 1.75rem;
   background-color: var(--accent-nav);
@@ -410,13 +410,13 @@ body.diploma-pitch .preamble-btn {
   transition: background-color var(--ease), color var(--ease), outline var(--ease);
 }
 
-body.diploma-pitch .preamble-btn:hover {
+body.qual-pitch .preamble-btn:hover {
   background-color: #65FF12;
   outline: 1px dashed rgba(21,0,255,0.4);
   color: #000000;
 }
 
-body.diploma-pitch .quiet-link {
+body.qual-pitch .quiet-link {
   font-family: var(--font-mono);
   font-size: 0.875rem;
   color: var(--text-muted);
@@ -424,13 +424,13 @@ body.diploma-pitch .quiet-link {
   border-bottom: 1px dashed var(--text-mutedmore);
 }
 
-body.diploma-pitch .quiet-link:hover {
+body.qual-pitch .quiet-link:hover {
   color: var(--accent-nav);
   border-bottom-color: var(--accent-nav);
 }
 
 /* ── Deck nav (fixed bottom bar) ── */
-body.diploma-pitch .deck-nav {
+body.qual-pitch .deck-nav {
   position: fixed;
   left: 0;
   right: 0;
@@ -446,7 +446,7 @@ body.diploma-pitch .deck-nav {
   z-index: 50;
 }
 
-body.diploma-pitch .deck-arrow {
+body.qual-pitch .deck-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -461,18 +461,18 @@ body.diploma-pitch .deck-arrow {
   transition: border-color var(--ease), color var(--ease);
 }
 
-body.diploma-pitch .deck-arrow:hover {
+body.qual-pitch .deck-arrow:hover {
   border-color: var(--accent-nav);
   color: var(--accent-nav);
 }
 
-body.diploma-pitch .deck-dots {
+body.qual-pitch .deck-dots {
   display: flex;
   align-items: center;
   gap: 0.4rem;
 }
 
-body.diploma-pitch .deck-dot {
+body.qual-pitch .deck-dot {
   width: 7px;
   height: 7px;
   padding: 0;
@@ -483,12 +483,12 @@ body.diploma-pitch .deck-dot {
   transition: background var(--ease), transform var(--ease);
 }
 
-body.diploma-pitch .deck-dot.active {
+body.qual-pitch .deck-dot.active {
   background: var(--accent-nav);
   transform: scale(1.3);
 }
 
-body.diploma-pitch .deck-counter {
+body.qual-pitch .deck-counter {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--text-mutedmore);
@@ -498,26 +498,26 @@ body.diploma-pitch .deck-counter {
 
 /* ── Responsive ── */
 @media (max-width: 960px) {
-  body.diploma-pitch .slide {
+  body.qual-pitch .slide {
     padding: 3rem 1.5rem 5rem;
   }
-  body.diploma-pitch h1,
-  body.diploma-pitch h2 {
+  body.qual-pitch h1,
+  body.qual-pitch h2 {
     font-size: 2.25rem;
   }
-  body.diploma-pitch .slide-cover h1 {
+  body.qual-pitch .slide-cover h1 {
     font-size: 2.5rem;
   }
-  body.diploma-pitch .slide-cols-3 {
+  body.qual-pitch .slide-cols-3 {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  body.diploma-pitch .stats-grid,
-  body.diploma-pitch .delivery-grid,
-  body.diploma-pitch .credential-list {
+  body.qual-pitch .stats-grid,
+  body.qual-pitch .delivery-grid,
+  body.qual-pitch .credential-list {
     grid-template-columns: 1fr 1fr;
   }
-  body.diploma-pitch .slide-num {
+  body.qual-pitch .slide-num {
     font-size: 3rem;
     top: 1.25rem;
     right: 1.5rem;
@@ -525,28 +525,28 @@ body.diploma-pitch .deck-counter {
 }
 
 @media (max-width: 600px) {
-  body.diploma-pitch .stats-grid,
-  body.diploma-pitch .delivery-grid,
-  body.diploma-pitch .credential-list,
-  body.diploma-pitch .outcome-list,
-  body.diploma-pitch .slide-cols-2 {
+  body.qual-pitch .stats-grid,
+  body.qual-pitch .delivery-grid,
+  body.qual-pitch .credential-list,
+  body.qual-pitch .outcome-list,
+  body.qual-pitch .slide-cols-2 {
     grid-template-columns: 1fr;
   }
-  body.diploma-pitch .credential-list {
+  body.qual-pitch .credential-list {
     grid-template-rows: none;
     grid-auto-flow: row;
   }
-  body.diploma-pitch .stat-strip {
+  body.qual-pitch .stat-strip {
     gap: 1.25rem;
   }
-  body.diploma-pitch .deck-dots {
+  body.qual-pitch .deck-dots {
     display: none;
   }
-  body.diploma-pitch .founder-layout {
+  body.qual-pitch .founder-layout {
     flex-direction: column;
     gap: 1.5rem;
   }
-  body.diploma-pitch .founder-photo {
+  body.qual-pitch .founder-photo {
     width: 120px;
   }
 }
@@ -555,17 +555,17 @@ body.diploma-pitch .deck-counter {
    nav links/toggle fade in only when the pointer is over the header.
    Restricted to mouse/trackpad devices: touch has no hover to reveal it. */
 @media (hover: hover) and (pointer: fine) {
-  body.diploma-pitch header .site-nav,
-  body.diploma-pitch header .nav-toggle {
+  body.qual-pitch header .site-nav,
+  body.qual-pitch header .nav-toggle {
     opacity: 0;
     pointer-events: none;
     transition: opacity 200ms ease;
   }
 
-  body.diploma-pitch header:hover .site-nav,
-  body.diploma-pitch header:focus-within .site-nav,
-  body.diploma-pitch header:hover .nav-toggle,
-  body.diploma-pitch header:focus-within .nav-toggle {
+  body.qual-pitch header:hover .site-nav,
+  body.qual-pitch header:focus-within .site-nav,
+  body.qual-pitch header:hover .nav-toggle,
+  body.qual-pitch header:focus-within .nav-toggle {
     opacity: 1;
     pointer-events: auto;
   }
