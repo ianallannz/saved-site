@@ -94,6 +94,59 @@ header nav a:hover {
     outline: 1px dashed rgba(21,0,255,0.4);
 }
 
+.alert-strip {
+    background-color: #FFB800;
+    color: #111111;
+    border-bottom: 1px dotted rgba(0,0,0,0.2);
+}
+
+.alert-strip-inner {
+    max-width: 1440px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.25rem;
+}
+
+.alert-strip-icon {
+    flex-shrink: 0;
+    color: #111111;
+}
+
+.alert-strip p {
+    margin: 0;
+    font-family: "Commit Mono", monospace;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.alert-strip-lead {
+    font-weight: 700;
+}
+
+.alert-strip a {
+    color: #111111;
+    font-family: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.alert-strip a:hover {
+    color: #1500FF;
+}
+
+@media (max-width: 768px) {
+    .alert-strip-inner {
+        padding: 0.6rem 1rem;
+    }
+
+    .alert-strip p {
+        font-size: 0.75rem;
+    }
+}
+
 .modal-icon {
     margin-left: 0.35rem;
     vertical-align: middle;
